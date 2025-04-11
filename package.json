@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "test": "vitest",
     "test:coverage": "vitest --coverage",
-    "test:ui": "vitest --ui"
+    "test:ui": "vitest --ui",
+    "start": "node server.js"
   },
   "dependencies": {
     "@react-spring/three": "^9.7.5",
@@ -19,6 +20,7 @@
     "@sentry/react": "^8.54.0",
     "@sentry/tracing": "^7.120.3",
     "@theme-toggles/react": "^4.1.0",
+    "express": "^4.18.3",
     "framer-motion": "^11.17.0",
     "glslify": "^7.1.1",
     "i18next": "^24.2.2",
