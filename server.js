@@ -1,7 +1,6 @@
 import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import fs from 'fs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,46 +8,10 @@ const __dirname = path.dirname(__filename);
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Debugging-Middleware um alle Anfragen zu loggen
+// Logger für alle Anfragen
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
   next();
-});
-
-// Spezielle Route für manifest.json
-app.get('/manifest.json', (req, res) => {
-  const manifestPath = path.join(__dirname, 'dist', 'manifest.json');
-  if (fs.existsSync(manifestPath)) {
-    console.log('Serving manifest.json with correct MIME type');
-    res.set('Content-Type', 'application/json');
-    res.sendFile(manifestPath);
-  } else {
-    console.log('manifest.json not found');
-    res.status(404).send('Not found');
-  }
-});
-
-// Spezielle Route für Schriftarten
-app.get('/fonts/SF-Pro-Display-Medium.woff2', (req, res) => {
-  console.log('Remapping SF-Pro-Display-Medium.woff2 to OTF file');
-  const fontPath = path.join(__dirname, 'dist', 'fonts', 'SFPRODISPLAYMEDIUM.OTF');
-  if (fs.existsSync(fontPath)) {
-    res.set('Content-Type', 'font/otf');
-    res.sendFile(fontPath);
-  } else {
-    res.status(404).send('Font not found');
-  }
-});
-
-app.get('/fonts/Inter-Regular.woff2', (req, res) => {
-  console.log('Remapping Inter-Regular.woff2 to OTF file');
-  const fontPath = path.join(__dirname, 'dist', 'fonts', 'SFPRODISPLAYREGULAR.OTF');
-  if (fs.existsSync(fontPath)) {
-    res.set('Content-Type', 'font/otf');
-    res.sendFile(fontPath);
-  } else {
-    res.status(404).send('Font not found');
-  }
 });
 
 // Statische Dateien mit korrekten MIME-Typen
@@ -56,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'dist'), {
   setHeaders: (res, filePath) => {
     const ext = path.extname(filePath).toLowerCase();
     
-    // Setze korrekte Content-Types
+    // MIME-Typen für verschiedene Dateiformate
     if (ext === '.js') res.set('Content-Type', 'application/javascript');
     if (ext === '.css') res.set('Content-Type', 'text/css');
     if (ext === '.json') res.set('Content-Type', 'application/json');
@@ -81,7 +44,7 @@ app.use(express.static(path.join(__dirname, 'dist'), {
   }
 }));
 
-// SPA-Routing - alle anderen Pfade zu index.html
+// SPA-Routing 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
