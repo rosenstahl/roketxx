@@ -4,19 +4,19 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 import http from 'http';
 
-// Ermittlung der aktuellen Dateipfade
+// Ermitteln des aktuellen Dateipfads
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Standard Express App
+// Erstelle eine Express-App
 const app = express();
 
-// Express-Static Middleware: Stellt Dateien aus dem dist-Verzeichnis bereit
+// Express-Static Middleware: Verweise auf das "dist"-Verzeichnis
 app.use(express.static(path.join(__dirname, 'dist'), {
   setHeaders: (res, filePath) => {
     const ext = path.extname(filePath).toLowerCase();
-    
-    // Setze den korrekten MIME-Typ für die jeweiligen Dateiendungen
+
+    // MIME-Typen für unterschiedliche Dateiendungen festlegen
     switch(ext) {
       case '.html':
         res.set('Content-Type', 'text/html');
@@ -25,7 +25,7 @@ app.use(express.static(path.join(__dirname, 'dist'), {
         res.set('Content-Type', 'text/css');
         break;
       case '.js':
-      case '.jsx':
+      case '.jsx':  // Hier wird .jsx genauso behandelt wie .js
         res.set('Content-Type', 'application/javascript');
         break;
       case '.json':
@@ -59,7 +59,7 @@ app.use(express.static(path.join(__dirname, 'dist'), {
       case '.woff2':
         res.set('Content-Type', 'font/woff2');
         break;
-      // Ergänze hier weitere Dateitypen, falls erforderlich
+      // Hier können weitere Dateitypen ergänzt werden
     }
     
     // Sicherheitsheader setzen
@@ -67,72 +67,69 @@ app.use(express.static(path.join(__dirname, 'dist'), {
   }
 }));
 
-// Fallback für alle anderen Routen – Single Page Application Routing
+// Fallback für alle anderen Routen: Single Page Application Routing
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-// HTTP-Server, der bestimmte Dateianfragen direkt bedient, um die Express-Middleware zu umgehen
+// HTTP-Server, der zuerst versucht, JavaScript/JSON-Dateien direkt auszuliefern
 const server = http.createServer((req, res) => {
   const url = req.url;
   console.log(`📄 Anfrage: ${req.method} ${url}`);
-  
+
   // Dateiendung extrahieren
   const ext = path.extname(url).toLowerCase();
-  
-  // Falls es sich um eine JavaScript-Datei handelt (.js oder .jsx)
+
+  // Wenn es sich um eine JavaScript-Datei handelt (.js oder .jsx)
   if (ext === '.js' || ext === '.jsx') {
     console.log(`🔧 JavaScript-Datei erkannt: ${url}`);
     res.setHeader('Content-Type', 'application/javascript');
     res.setHeader('X-Content-Type-Options', 'nosniff');
-    
-    // Pfad zur Datei (im dist-Verzeichnis)
+
+    // Pfad zur Datei im "dist"-Verzeichnis
     const filePath = path.join(__dirname, 'dist', url);
     if (fs.existsSync(filePath)) {
       const fileStream = fs.createReadStream(filePath);
       fileStream.pipe(res);
+      return;
     } else {
-      // Falls die Datei nicht direkt gefunden wird, an Express weiterleiten
-      app(req, res);
+      // Falls Datei nicht gefunden wird – an Express weiterleiten
+      return app(req, res);
     }
-    return;
   }
-  
-  // Bei JSON-Dateien explizit den JSON-MIME-Typ setzen
+  // Bei JSON-Dateien
   else if (ext === '.json') {
     console.log(`🔧 JSON-Datei erkannt: ${url}`);
     res.setHeader('Content-Type', 'application/json');
     res.setHeader('X-Content-Type-Options', 'nosniff');
-    
+
     const filePath = path.join(__dirname, 'dist', url);
     if (fs.existsSync(filePath)) {
       const fileStream = fs.createReadStream(filePath);
       fileStream.pipe(res);
+      return;
     } else {
-      app(req, res);
+      return app(req, res);
     }
-    return;
   }
-  
   // Alle anderen Anfragen über die Express-App abwickeln
   else {
-    app(req, res);
-    return;
+    return app(req, res);
   }
 });
 
-// Port-Konfiguration (Standard: 3001)
+// Port-Konfiguration: Verwende den Port aus der Umgebung oder 3001 als Standard
 const PORT = process.env.PORT || 3001;
 
-// Server starten und diagnostische Ausgabe
+// Starte den Server
 server.listen(PORT, () => {
   console.log(`🚀 Server läuft auf Port ${PORT}`);
-  console.log(`📂 Serving files from: ${path.join(__dirname, 'dist')}`);
-  
-  // Diagnose: Alle JavaScript-Dateien im dist-Verzeichnis auflisten
+  console.log(`📂 Dateien werden aus: ${path.join(__dirname, 'dist')} serviert`);
+
+  // Diagnose: Alle JavaScript-Dateien im "dist"-Verzeichnis auflisten
   try {
     const jsFiles = findJsFiles(path.join(__dirname, 'dist'));
-    console.log(`📋 JavaScript-Dateien gefunden: ${jsFiles.length}`);
+    console.log(`📋 Gefundene JavaScript-Dateien: ${jsFiles.length}`);
     jsFiles.forEach(file => {
       console.log(`   - ${path.relative(path.join(__dirname, 'dist'), file)}`);
     });
@@ -141,7 +138,7 @@ server.listen(PORT, () => {
   }
 });
 
-// Hilfsfunktion: Rekursive Suche nach JavaScript-Dateien (.js oder .jsx)
+// Hilfsfunktion: Suche rekursiv nach .js und .jsx Dateien
 function findJsFiles(dir) {
   let results = [];
   try {
@@ -149,7 +146,7 @@ function findJsFiles(dir) {
     for (const file of files) {
       const filePath = path.join(dir, file);
       const stat = fs.statSync(filePath);
-      
+
       if (stat.isDirectory()) {
         results = results.concat(findJsFiles(filePath));
       } else if (filePath.endsWith('.js') || filePath.endsWith('.jsx')) {
@@ -159,6 +156,5 @@ function findJsFiles(dir) {
   } catch (error) {
     console.error(`❌ Fehler beim Durchsuchen von ${dir}: ${error.message}`);
   }
-  
   return results;
 }
