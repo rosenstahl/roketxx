@@ -1,0 +1,31 @@
+User-agent: *
+Allow: /
+Allow: /en
+Allow: /tr
+Allow: /kontakt
+Allow: /impressum
+Allow: /datenschutz
+Allow: /agb
+
+# Googlebot spezifische Regeln
+User-agent: Googlebot
+Allow: /
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+
+# GPTBot Regeln
+User-agent: GPTBot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://roketx.de/sitemap.xml
+
+# Verzeichnisse die nicht gecrawlt werden sollen
+Disallow: /api/
+Disallow: /assets/
+Disallow: /*.json$

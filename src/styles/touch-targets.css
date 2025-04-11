@@ -1,0 +1,56 @@
+/* Touch target utilities based on WCAG guidelines */
+.touch-target-xs {
+  min-width: 36px;
+  min-height: 36px;
+}
+
+.touch-target-sm {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.touch-target-base {
+  min-width: 44px; /* WCAG recommended minimum */
+  min-height: 44px;
+}
+
+.touch-target-lg {
+  min-width: 48px;
+  min-height: 48px;
+}
+
+.touch-target-xl {
+  min-width: 52px;
+  min-height: 52px;
+}
+
+/* Ensure proper spacing between touch targets */
+.touch-spacing > * + * {
+  margin-left: 8px; /* Minimum spacing between touch targets */
+}
+
+/* For vertical layouts */
+.touch-spacing-vertical > * + * {
+  margin-top: 8px;
+}
+
+/* Media query for touch devices */
+@media (pointer: coarse) {
+  .touch-target-xs,
+  .touch-target-sm,
+  .touch-target-base,
+  .touch-target-lg,
+  .touch-target-xl {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Increase spacing on touch devices */
+  .touch-spacing > * + * {
+    margin-left: 12px;
+  }
+  
+  .touch-spacing-vertical > * + * {
+    margin-top: 12px;
+  }
+}

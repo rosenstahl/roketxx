@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* SF Pro Display als System-Font */
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('-apple-system'), local('BlinkMacSystemFont');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('-apple-system'), local('BlinkMacSystemFont');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('-apple-system'), local('BlinkMacSystemFont');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: local('-apple-system'), local('BlinkMacSystemFont');
+  font-weight: 700;
+}
+
+/* Base Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-base-primary text-main-primary;
+  }
+
+  body {
+    @apply font-inter antialiased;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes slideText {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-slideText {
+  white-space: nowrap;
+  animation: slideText 20s linear infinite;
+}

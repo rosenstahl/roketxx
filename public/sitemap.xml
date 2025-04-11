@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://roketx.de/</loc>
+    <lastmod>2025-02-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://roketx.de/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roketx.de/en"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://roketx.de/tr"/>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Kontakt -->
+  <url>
+    <loc>https://roketx.de/kontakt</loc>
+    <lastmod>2025-02-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://roketx.de/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://roketx.de/en/kontakt"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://roketx.de/tr/kontakt"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Impressum -->
+  <url>
+    <loc>https://roketx.de/impressum</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Datenschutz -->
+  <url>
+    <loc>https://roketx.de/datenschutz</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- AGB -->
+  <url>
+    <loc>https://roketx.de/agb</loc>
+    <lastmod>2025-02-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>

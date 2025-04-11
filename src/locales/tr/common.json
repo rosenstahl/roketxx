@@ -1,0 +1,1459 @@
+{
+  "navigation": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "faq": "SSS",
+    "services": "Hizmetler"
+  },
+    "buttons": {
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "learn_more": "Daha Fazla"
+  },
+      "hero": {
+        "title": "Sizin Vizyonunuz, Bizim İşimiz: Birlikte Başarıya",
+        "subtitle": "Şirketinizi fikirden başarılı pazar lansmanına kadar geliştiriyoruz",
+        "cta": {
+          "start": "Hadi başlayalım!",
+          "discover": "Çözümlerimizi keşfedin"
+        },
+        "trusted": "Lider şirketler tarafından güvenilir"
+    },
+      "about": {
+        "title": "Vizyonları Pazar Başarısına Dönüştürüyoruz",
+        "history": {
+          "title": "Hikayemiz",
+          "part1": "Başarı sadece harika fikirlerle değil – strateji, tasarım ve teknolojinin mükemmel birleşimiyle gelir. Bu inançla 2019'da Dortmund'da bir ortak çalışma alanında RoketX'i kurduk.",
+          "part2": "Misyonumuz başından beri netti: şirketlerin karmaşık zorlukları çözmelerine ve vizyonları ölçülebilir başarılara dönüştürmelerine yardımcı olmak. Start-up'lar genellikle uygulamada başarısız olurken, köklü şirketler bağlantıyı kaybetti. İşte burada boşluğu doldurduk – sürdürülebilir iş başarısı için tek durak ortağı olarak.",
+          "part3": "Bugün, start-up'ları ve sektör liderlerini bütünsel stratejilerle ilham veriyor, danışmanlık yapıyor ve destekliyoruz. 100'den fazla başarıyla tamamlanmış projeyle stratejik hassasiyet, yaratıcı mükemmellik ve teknolojik yeniliği birleştiriyoruz. Sadece çözümler yaratmıyoruz – pazar liderleri şekillendiriyoruz."
+        },
+        "timeline": {
+          "2019": {
+            "title": "Kuruluş",
+            "description": "Dijital inovasyonu erişilebilir kılma vizyonuyla Dortmund'da bir ortak çalışma alanında başladık."
+          },
+          "2021": {
+            "title": "Genişleme & Büyüme",
+            "description": "50+ başarılı proje ve güçlü bir ortak ağı kurulması."
+          },
+          "2024": {
+            "title": "Pazar Lideri",
+            "description": "100+ proje, çoklu ödüller ve dijital dönüşümde liderlik."
+          }
+        },
+        "achievements": {
+          "projects": {
+            "number": "100+",
+            "text": "başarıyla tamamlanan proje"
+          },
+          "satisfaction": {
+            "number": "97%",
+            "text": "müşteri memnuniyeti"
+          },
+          "experience": {
+            "number": "7+",
+            "text": "yıllık sektör deneyimi"
+          }
+        },
+        "partnerships": {
+          "title": "Güçlü Ortaklıklar"
+        },
+        "awards": {
+          "title": "Ödüller 2023/24",
+          "list": [
+            "Dijital Dönüşüm Ödülü",
+            "Start-up'lar İçin En İyi Ajans",
+            "En Yenilikçi 10 Şirket",
+            "Alman Kurucu Ödülü"
+          ]
+        },
+        "quote": "“Başarı tesadüf değildir – doğru zamanda, doğru ortaklarla, doğru stratejinin sonucudur.”",
+        "cta": "Başarı hikayenizi birlikte yazalım"
+      },
+        "faq": {
+          "title": "Sıkça Sorulan Sorular",
+          "subtitle": "Hizmetlerimiz hakkında bilmeniz gereken her şey",
+          "noAnswer": "Sorunuzun cevabını bulamadınız mı?",
+          "contact": "Bize ulaşın",
+          "items": [
+            {
+              "question": "Bir iş danışmanlığı olarak temel hizmetleriniz nelerdir?",
+              "answer": "Temel hizmetlerimiz dört ana alanı kapsar: Yeni işletmeler için Startup All-in-One, mevcut şirketlerin dijital dönüşümü için Digital Transform, yeniden konumlandırma için Makeover ve büyüme aşamasındaki şirketler için Growth. Her paket, marka geliştirmeden iş ekipmanlarına ve dijital varlığa kadar kapsamlı hizmetler içerir."
+            },
+            {
+              "question": "roketX'i diğer danışmanlık şirketlerinden farklı kılan nedir?",
+              "answer": "Her iş aşamasına özel olarak uyarlanmış hepsi bir arada çözümlerle bütünsel bir yaklaşım sunuyoruz. Benzersiz satış önerimiz, stratejik danışmanlık ile pratik uygulamanın birleşimidir - marka geliştirmeden teknik uygulamaya kadar her şey tek bir kaynaktan."
+            },
+            {
+              "question": "Hizmetleriniz hangi şirket büyüklükleri için uygundur?",
+              "answer": "Hizmetlerimiz hem start-up'lar ve bireysel girişimciler hem de yerleşik orta ölçekli şirketler için tasarlanmıştır. Paketler esnektir ve şirket büyüklüğünden bağımsız olarak özel ihtiyaçlarınıza göre uyarlanabilir."
+            },
+            {
+              "question": "İşbirliği somut olarak nasıl işliyor?",
+              "answer": "İlk danışma ve paket seçiminden sonra detaylı bir proje planı oluşturuyoruz. Tüm süreç boyunca size rehberlik edecek kişisel bir irtibat kişisi alıyorsunuz. Uygulama, kanıtlanmış sistemimize göre adım adım gerçekleşir ve tüm önemli kararlara dahil edilirsiniz."
+            },
+            {
+              "question": "Çeşitli paketlerin uygulanması ne kadar sürüyor?",
+              "answer": "Uygulama süresi pakete ve gereksinimlere göre değişir. Rehber değerler: Startup paketi 8-12 hafta, Digital Transform 8-10 hafta, Makeover 10-12 hafta ve Growth paketi 10-14 hafta. Kesin zaman çizelgesi sizinle bireysel olarak koordine edilir."
+            },
+            {
+              "question": "Paketler ne kadar esnek uyarlanabilir?",
+              "answer": "Tüm paketler modüler olarak uyarlanabilir. Özel ihtiyaçlarınızı analiz eder ve hizmetleri ekleyip çıkarabiliriz. Paketlerin temel yapısı, tüm önemli alanların kapsandığını garanti eder."
+            },
+            {
+              "question": "Maliyetler nasıl yapılandırılmıştır ve hangi ödeme seçenekleri vardır?",
+              "answer": "Fiyatlar pakete ve bireysel kapsama göre değişir. Tek seferlik ödemelerden esnek taksit planlarına kadar çeşitli ödeme modelleri sunuyoruz. Ücretsiz bir ilk görüşmede size özel bir teklif oluşturuyoruz."
+            },
+            {
+              "question": "Paketlerde hangi teknik hizmetler dahildir?",
+              "answer": "Tüm paketler profesyonel hosting, SSL sertifikaları, düzenli yedeklemeler ve teknik destek içerir. Mobil ve iletişim paketleri tüm şebeke paketleri ve veri hacmi içerir. Güncellemeler ve bakım 12 ay boyunca dahildir."
+            }
+          ]
+        },
+          "contact": {
+            "header": {
+              "title": "Birlikte Başarıya",
+              "subtitle": "Paketinizi seçin ve hemen başlayın!"
+            },
+            "steps": {
+              "package": "Paket Seç",
+              "contact": "İletişim Bilgileri",
+              "message": "Mesaj"
+            },
+            "packageSelector": {
+              "title": "Paketinizi Seçin",
+              "popular": "Popüler",
+              "error": "Lütfen bir paket seçin"
+            },
+            "form": {
+              "contact": {
+                "title": "İletişim Bilgileriniz",
+                "name": {
+                  "label": "İsim",
+                  "error": "İsim gereklidir"
+                },
+                "email": {
+                  "label": "E-posta",
+                  "error": "E-posta gereklidir",
+                  "invalid": "Geçersiz e-posta adresi"
+                },
+                "phone": {
+                  "label": "Telefon (opsiyonel)"
+                }
+              },
+              "message": {
+                "title": "Mesajınız",
+                "label": "Mesaj (opsiyonel)",
+                "placeholder": "Projenizi veya sorularınızı kısaca açıklayın..."
+              },
+              "privacy": {
+                "label": "Gizlilik Politikasını kabul ediyorum",
+                "error": "Lütfen gizlilik politikasını kabul edin",
+                "link": "Gizlilik Politikası"
+              },
+              "error": {
+                "generic": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+              }
+            },
+            "buttons": {
+              "next": "İleri",
+              "back": "Geri",
+              "submit": "Gönder",
+              "sending": "Gönderiliyor..."
+            },
+            "success": {
+              "title": "Talebiniz için teşekkürler!",
+              "message": "En kısa sürede size geri döneceğiz."
+            }
+          },
+            "support": {
+              "header": {
+                "title": "Destek ve Garanti",
+                "subtitle": "Başarınız için kapsamlı destek ve güvenlik"
+              },
+              "features": {
+                "setup": {
+                  "title": "Tam Kapsamlı Kurulum",
+                  "items": [
+                    "Kişisel iletişim sorumlusu",
+                    "Tüm hizmetlerin eksiksiz kurulumu",
+                    "Ekibiniz için 3 saatlik temel eğitim",
+                    "30 gün yoğun destek"
+                  ]
+                },
+                "premium": {
+                  "title": "Premium Destek",
+                  "items": [
+                    "24 saat içinde yanıt",
+                    "Uzaktan destek",
+                    "Acil durum hattı",
+                    "Düzenli güncellemeler"
+                  ]
+                },
+                "guarantee": {
+                  "title": "Garantilerimiz",
+                  "items": [
+                    "30 gün para iade",
+                    "99.9% kullanılabilirlik",
+                    "GDPR uyumlu",
+                    "Düzenli yedeklemeler"
+                  ]
+                },
+                "optional": {
+                  "title": "Opsiyonel Hizmetler",
+                  "items": [
+                    "Ek eğitimler",
+                    "İçerik oluşturma",
+                    "SEO optimizasyonu",
+                    "Pazarlama danışmanlığı"
+                  ]
+                }
+              },
+              "cta": {
+                "question": "Destek hizmetlerimiz hakkında sorularınız mı var?",
+                "button": "Bize ulaşın"
+              }
+            },
+              "testimonials": {
+                "header": {
+                  "title": "Müşterilerimiz Ne Diyor",
+                  "subtitle": "Müşterilerimizin dijital dönüşümlerini nasıl başarıyla yönetmelerine yardımcı olduğumuzu öğrenin"
+                },
+                "navigation": {
+                  "previous": "Önceki referans",
+                  "next": "Sonraki referans",
+                  "goto": "Referansa git"
+                },
+                "items": [
+                  {
+                    "content": "Başlangıçta, harici bir ekibin çok özel gereksinimlerimizi anlayıp anlamayacağı konusunda şüpheliydim. roketX ile ilk çalıştaydan sonra bu endişe ortadan kalktı. Özellikle bize yapıcı bir şekilde karşı çıkmaları hoşuma gitti - bu sonunda çok daha iyi bir çözüme yol açtı.",
+                    "name": "Lisa Burghardt",
+                    "position": "Kurucu Ortak, BetterLife GmbH",
+                    "award": "Baden-Württemberg Kurucu Ödülü 2022"
+                  },
+                  {
+                    "content": "40 yıllık bir aile şirketi olarak, dijitalleşme konusunda zorlandık. roketX ile tanışmadan önce arkamızda iki başarısız proje vardı. Önce dikkatlice dinlediler ve sonra bizimle adım adım bir plan geliştirdiler. Elbette gerilemeler oldu, ama bugün dijital sipariş sistemimiz kusursuz çalışıyor.",
+                    "name": "Frank Weber",
+                    "position": "CEO, Weber & Söhne Metallbau"
+                  },
+                  {
+                    "content": "roketX hasta yönetim sistemimizi modernize etti. Başkalarının 'imkansız' dediği şeyi çözdüler. Elbette, yoğun olduklarında bazen yanıtlar için biraz daha uzun beklemek zorunda kaldık - ama işin üst kalitesi bunu fazlasıyla telafi ediyor.",
+                    "name": "Ingridt Lose",
+                    "position": "Dijital Direktör, Schmidt & Partner Tıp Merkezi"
+                  },
+                  {
+                    "content": "6 aylık işbirliğinden sonra şunu söyleyebilirim: Yatırım değerdi. Yeni CRM sistemimiz ekibe günde en az 2 saat çalışma süresi kazandırıyor. Özellikle hoşuma giden: roketX'teki meslektaşlar, canlıya geçtikten sonra bile bir şey takıldığında ulaşılabilir durumda.",
+                    "name": "Yusuf Karadas",
+                    "position": "CEO, TechVision GmbH",
+                    "award": "İş Dünyası İnovasyon Ödülü 2023"
+                  },
+                  {
+                    "content": "Nihayet teknik jargon kullanmayan bir BT hizmet sağlayıcısı! Ekip, karmaşık konuları teknik olmayan çalışanlarımızın bile anlayabileceği şekilde açıklamayı başardı. Yeni intranet bu sayede herkes tarafından çok iyi karşılandı - ve bu 200 çalışan için önemli bir başarı!",
+                    "name": "Marina Kovač",
+                    "position": "İletişim Direktörü, InnoSpace"
+                  }
+                ]
+                },
+                  "footer": {
+                    "description": "Vizyonunuzu pazar hazır bir şirkete dönüştürüyoruz - konseptten başarılı pazar lansmanına kadar.",
+                    "contact": {
+                      "title": "İletişim",
+                      "phone": "0173 852 84 82",
+                      "email": "info@roketX.com",
+                      "address": {
+                        "street": "Rheinische Str. 220",
+                        "city": "44147 Dortmund"
+                      }
+                    },
+                    "legal": {
+                      "title": "Yasal",
+                      "imprint": "Künye",
+                      "terms": "Kullanım Şartları",
+                      "privacy": "Gizlilik"
+                    },
+                    "cta": {
+                      "title": "Bize Ulaşın",
+                      "button": "Ücretsiz İlk Danışma"
+                    },
+                    "copyright": "©  {{year}} roketX. Tüm hakları saklıdır.",
+                    "social": {
+                      "instagram": "@roketX.de"
+                    }
+                  },
+                    "notFound": {
+                      "title": "404",
+                      "heading": "Sayfa Bulunamadı",
+                      "description": "Üzgünüz, aradığınız sayfa mevcut değil veya taşınmış.",
+                      "button": "Ana Sayfaya Dön"
+                    },
+                      "imprint": {
+                        "title": "Künye",
+                        "subtitle": "Şirketimiz hakkında yasal bilgiler ve detaylar",
+                        "sections": [
+                          {
+                            "title": "§ 5 TMG'ye göre bilgiler",
+                            "content": [
+                              "TREU Service GmbH",
+                              "Rheinische Straße 220",
+                              "44147 Dortmund"
+                            ]
+                          },
+                          {
+                            "title": "Ticaret Sicili",
+                            "content": [
+                              "HRB 20627",
+                              "Sicil Mahkemesi: Dortmund"
+                            ]
+                          },
+                          {
+                            "title": "Temsil eden",
+                            "content": [
+                              "Hasan Hüseyin Yilmaz",
+                              "Genel Müdür"
+                            ]
+                          },
+                          {
+                            "title": "İletişim",
+                            "content": [
+                              "Telefon: 0231 15044352",
+                              "E-posta: info@roketx.de"
+                            ]
+                          },
+                          {
+                            "title": "KDV No",
+                            "content": [
+                              "Alman KDV kanunu § 27a'ya göre KDV kimlik numarası:",
+                              "DE362838091"
+                            ]
+                          },
+                          {
+                            "title": "Mesleki Unvan ve Yönetmelikler",
+                            "content": [
+                              "Mesleki Unvan: Zanaatkar",
+                              "Yetkili Oda:",
+                              "Dortmund Sanayi ve Ticaret Odası",
+                              "Märkische Str. 120",
+                              "44141 Dortmund",
+                              "Verildiği yer: Almanya"
+                            ]
+                          },
+                          {
+                            "title": "Denetim Kurumu",
+                            "content": [
+                              "Dortmund Şehri",
+                              "Olpe 1",
+                              "44135 Dortmund"
+                            ]
+                          },
+                          {
+                            "title": "ODR-VO Mad. 14 Bent 1'e göre Çevrimiçi Uyuşmazlık Çözümü",
+                            "content": [
+                              "Avrupa Komisyonu, https://ec.europa.eu/consumers/odr/ adresinde bulunan bir çevrimiçi uyuşmazlık çözüm platformu (ODR) sunmaktadır."
+                            ],
+                            "hasLink": true
+                          },
+                          {
+                            "title": "Telif Hakkı",
+                            "content": [
+                              "Bu sayfalardaki site operatörleri tarafından oluşturulan içerik ve eserler Alman telif hakkı yasasına tabidir. Telif hakkı sınırları dışındaki çoğaltma, düzenleme, dağıtım ve her türlü kullanım, ilgili yazar veya yaratıcının yazılı onayını gerektirir."
+                            ]
+                          }
+                        ]
+                      },
+                        "terms": {
+                          "title": "Genel Şartlar ve Koşullar",
+                          "subtitle": "İşbirliğimizin çerçeve koşulları",
+                          "sections": [
+                            {
+                              "title": "§1 Kapsam ve Sağlayıcı",
+                              "content": [
+                                "(1) Bu Genel Şartlar ve Koşullar, TREU Service GmbH - bundan böyle 'roketX' olarak anılacaktır - ile müşteri arasındaki tüm siparişler, hizmetler ve teslimler için geçerlidir.",
+                                "TREU Service GmbH",
+                                "Rheinische Straße 220",
+                                "44147 Dortmund",
+                                "Ticaret Sicili: HRB 20627",
+                                "Sicil Mahkemesi: Dortmund"
+                              ]
+                            },
+                            {
+                              "title": "§2 Sözleşme Konusu",
+                              "content": [
+                                "(1) RoketX aşağıdaki hizmetleri sunmaktadır:",
+                                "- Start-up All-in-One",
+                                "- Digital Transformation",
+                                "- Brand Makeover",
+                                "- Growth",
+                                "(2) Hizmetlerin tam kapsamı, teklifte yer alan ilgili hizmet tanımında belirtilmiştir."
+                              ]
+                            },
+                            {
+                              "title": "§3 Sözleşmenin Oluşturulması",
+                              "content": [
+                                "(1) Hizmetlerin sunumu yasal olarak bağlayıcı bir teklif teşkil etmez.",
+                                "(2) Bir talep alındıktan sonra, RoketX özel bir teklif oluşturur. Sözleşme, müşterinin teklifi kabul etmesiyle oluşur."
+                              ]
+                            },
+                            {
+                              "title": "§4 Ücretlendirme ve Ödeme Koşulları",
+                              "content": [
+                                "(1) Ücretlendirme, kararlaştırılan paket fiyatına veya saatlik ücrete göre belirlenir.",
+                                "(2) Tüm fiyatlara yasal KDV dahil değildir.",
+                                "(3) Ödeme banka havalesi ile yapılır ve aşağıdaki şekilde ödenir:",
+                                "- Sözleşme imzalandığında ücretin %50'si",
+                                "- Tamamlanma veya kabul sonrası %50'si"
+                              ]
+                            },
+                            {
+                              "title": "§5 Hizmet Sunumu ve İşbirliği Yükümlülükleri",
+                              "content": [
+                                "(1) RoketX, kararlaştırılan hizmetleri en iyi bilgi ve inancıyla sunar.",
+                                "(2) Müşteri, hizmetlerin sunulması için gerekli tüm belge ve bilgileri RoketX'e zamanında sağlamakla yükümlüdür."
+                              ]
+                            },
+                            {
+                              "title": "§6 Kabul",
+                              "content": [
+                                "(1) Kararlaştırılan hizmetlerin tamamlanmasından sonra müşteriden işi kabul etmesi istenecektir.",
+                                "(2) Müşteri, kabul talebi aldıktan sonra 14 gün içinde önemli kusurları yazılı olarak bildirmezse, kabul gerçekleşmiş sayılır."
+                              ]
+                            },
+                            {
+                              "title": "§7 Fesih ve İptal",
+                              "content": [
+                                "(1) Sözleşme, taraflardan herhangi biri tarafından ayın sonuna 30 gün kala bildirimde bulunularak feshedilebilir.",
+                                "(2) Müşteri tarafından iptal durumunda aşağıdaki iptal ücretleri geçerlidir:",
+                                "- Proje başlangıcından 14 gün öncesine kadar: Sipariş tutarının %25'i",
+                                "- Proje başlangıcından 7 gün öncesine kadar: Sipariş tutarının %50'si",
+                                "- Sonrasında: Sipariş tutarının %75'i"
+                              ]
+                            },
+                            {
+                              "title": "§8 Garanti ve Sorumluluk",
+                              "content": [
+                                "(1) RoketX, sadece kasıt veya ağır ihmal durumunda zararlardan sorumludur.",
+                                "(2) Sorumluluk, öngörülebilir, tipik olarak ortaya çıkan zararlarla sınırlıdır.",
+                                "(3) Garanti süresi, kabulden itibaren 12 aydır."
+                              ]
+                            },
+                            {
+                              "title": "§9 Gizlilik ve Veri Koruma",
+                              "content": [
+                                "(1) Her iki taraf da işbirliği sırasında elde edilen tüm bilgileri gizli tutmayı taahhüt eder.",
+                                "(2) Kişisel verilerin işlenmesi, gizlilik politikamıza uygun olarak gerçekleştirilir."
+                              ]
+                            },
+                            {
+                              "title": "§10 Son Hükümler",
+                              "content": [
+                                "(1) Federal Almanya Cumhuriyeti yasaları geçerlidir, BM Uluslararası Mal Satışı Sözleşmeleri Konvansiyonu hariçtir.",
+                                "(2) Tüm anlaşmazlıklar için yargı yeri Dortmund'dur.",
+                                "(3) Bu şartların herhangi bir hükmünün geçersiz olması durumunda, diğer hükümlerin geçerliliği bundan etkilenmez."
+                              ]
+                            }
+                          ]
+                        },
+                          "privacy": {
+                            "title": "Gizlilik Politikası",
+                            "subtitle": "Veri koruma ve haklarınız hakkında bilgiler",
+                            "sections": [
+                              {
+                                "title": "Sorumlu Kuruluş",
+                                "content": [
+                                  "TREU Service GmbH",
+                                  "Rheinische Straße 220",
+                                  "44147 Dortmund",
+                                  "Telefon: 0231 15044352",
+                                  "E-posta: info@roketx.de"
+                                ]
+                              },
+                              {
+                                "title": "Temel Bilgiler",
+                                "content": [
+                                  "Bu gizlilik politikası, web sitemizdeki kişisel verilerin işlenmesinin niteliği, kapsamı ve amacı hakkında sizi bilgilendirir.",
+                                  "Kişisel veriler, tanımlanmış veya tanımlanabilir bir gerçek kişiyle ilgili bilgilerdir."
+                                ]
+                              },
+                              {
+                                "title": "Çerezler",
+                                "content": [
+                                  "Web sitemiz çerezler kullanmaktadır. Bunlar, cihazınızda depolanan küçük metin dosyalarıdır. Tarayıcınız bu dosyalara erişir.",
+                                  "Aşağıdaki çerez türlerini kullanıyoruz:",
+                                  "- Teknik olarak gerekli çerezler: Bunlar, web sitesinin temel işlevlerinin düzgün çalışması için gereklidir.",
+                                  "- Tercih çerezleri: Bunlar, web sitesinin davranışını veya görünümünü etkileyen bilgileri hatırlamasını sağlar.",
+                                  "Tarayıcınızı, çerezlerin ayarlanması hakkında sizi bilgilendirecek ve bunların kabulü hakkında tek tek karar verebilecek veya çerezlerin kabulünü genel olarak hariç tutacak şekilde ayarlayabilirsiniz."
+                                ]
+                              },
+                              {
+                                "title": "Sosyal Medya Eklentileri",
+                                "content": [
+                                  "Web sitemizde Instagram'dan sosyal medya eklentileri entegre edilmiştir. Web sitemizde böyle bir eklenti içeren bir sayfayı ziyaret ettiğinizde, tarayıcınız Instagram'ın sunucularıyla doğrudan bir bağlantı kurar.",
+                                  "Instagram böylece web sitemizin ilgili sayfasına eriştiğiniz bilgisini alır. Ziyaret sırasında Instagram hesabınızda oturum açmışsanız, Instagram ziyareti hesabınızla ilişkilendirebilir."
+                                ]
+                              },
+                              {
+                                "title": "GDPR Kapsamındaki Haklarınız",
+                                "content": [
+                                  "GDPR kapsamında aşağıdaki haklara sahipsiniz:",
+                                  "- Bilgi alma hakkı (Madde 15 GDPR): İşlenen kişisel verileriniz hakkında bilgi talep edebilirsiniz.",
+                                  "- Düzeltme hakkı (Madde 16 GDPR): Yanlış verilerin düzeltilmesini veya depolanan verilerinizin tamamlanmasını talep edebilirsiniz.",
+                                  "- Silme hakkı (Madde 17 GDPR): Depolanan verilerinizin silinmesini talep edebilirsiniz.",
+                                  "- İşlemenin kısıtlanması hakkı (Madde 18 GDPR)",
+                                  "- Veri taşınabilirliği hakkı (Madde 20 GDPR)",
+                                  "- İtiraz hakkı (Madde 21 GDPR)",
+                                  "- Denetim makamına şikayet hakkı (Madde 77 GDPR)"
+                                ]
+                              },
+                              {
+                                "title": "İletişim",
+                                "content": [
+                                  "Veri koruma ile ilgili sorularınız varsa, lütfen bize e-posta gönderin veya doğrudan veri koruma görevlimizle iletişime geçin:",
+                                  "TREU Service GmbH",
+                                  "Veri Koruma Görevlisi",
+                                  "Rheinische Straße 220",
+                                  "44147 Dortmund",
+                                  "E-posta: info@roketx.de"
+                                ]
+                              }
+                            ]
+                          },
+                            "stats": {
+                              "title": "Dijital Bağlantıyı Kaçırmayın",
+                              "subtitle": "Rakamlar açıkça gösteriyor: Başarı ve başarısızlık arasındaki fark profesyonel dijital varlıkta yatıyor",
+                              "stats": [
+                                {
+                                  "percentage": 92,
+                                  "text": "profesyonel markalaşma ve dijital varlık olmadan ilk 3 yılda başarısız olan startuplar",
+                                  "subtext": "En yaygın neden: dijital varlık eksikliği"
+                                },
+                                {
+                                  "percentage": 340,
+                                  "text": "profesyonel marka geliştirme ve işletme donanımı ile daha yüksek hayatta kalma oranı",
+                                  "subtext": "İşletmeniz için belirleyici avantaj"
+                                },
+                                {
+                                  "percentage": 76,
+                                  "text": "geleneksel şirketler dijital doğumlu rakiplere pazar payı kaybediyor",
+                                  "subtext": "Takipçi değil öncü olun"
+                                },
+                                {
+                                  "percentage": 83,
+                                  "text": "müşteriler artık şirketlerle dijital etkileşim imkanları bekliyor",
+                                  "subtext": "Tam da bu beklentileri karşılama şansınız"
+                                }
+                              ],
+                              "cta": {
+                                "title": "İyi haber: Şimdi doğrusunu yapma şansınız var",
+                                "button": "Ücretsiz Strateji Görüşmesi Planlayın",
+                                "dataSource": "Veriler 2023/24 güncel pazar analizlerine dayanmaktadır"
+                              }
+                            },
+                              "contactFaqs": {
+                                "groups": {
+                                  "general": {
+                                    "title": "Genel Sorular",
+                                    "items": [
+                                      {
+                                        "q": "İlk iletişim nasıl gerçekleşiyor?",
+                                        "a": "Talebinizden sonra 24 saat içinde size geri döneceğiz. Randevu alırken, 30 dakikalık ilk görüşme için uygun bir zaman seçebilirsiniz."
+                                      },
+                                      {
+                                        "q": "Hangi dillerde iletişim kurabiliriz?",
+                                        "a": "Almanca ve İngilizce iletişim kuruyoruz. Geliştiricilerimiz ayrıca Türkçe de konuşuyor."
+                                      }
+                                    ]
+                                  },
+                                  "meetings": {
+                                    "title": "Randevular ve Müsaitlik",
+                                    "items": [
+                                      {
+                                        "q": "Ne zaman ulaşılabilirsiniz?",
+                                        "a": "Çalışma saatlerimiz Pazartesi'den Cuma'ya 09:00 - 17:00 arası. Acil durumlarda bu saatler dışında WhatsApp üzerinden de ulaşılabilirsiniz."
+                                      },
+                                      {
+                                        "q": "İlk görüşme ne kadar sürüyor?",
+                                        "a": "Ücretsiz ilk görüşme 30 dakika sürüyor. Gerekirse randevuyu uzatabilir veya takip görüşmesi ayarlayabiliriz."
+                                      }
+                                    ]
+                                  },
+                                  "project": {
+                                    "title": "Proje Talepleri",
+                                    "items": [
+                                      {
+                                        "q": "Teklif için hangi bilgilere ihtiyacınız var?",
+                                        "a": "Yararlı bilgiler: proje kapsamı, zaman çizelgesi, bütçe beklentisi ve özel gereksinimler. Ne kadar detaylı olursa, o kadar uygun bir teklif oluşturabiliriz."
+                                      },
+                                      {
+                                        "q": "Bir projeye ne kadar hızlı başlayabilirsiniz?",
+                                        "a": "Başlangıç süresi, mevcut proje yoğunluğuna ve projenizin kapsamına bağlı olarak değişir. Genellikle 2-4 hafta içinde uygulamaya başlayabiliriz."
+                                      }
+                                    ]
+                                  }
+                                }
+                              },
+                                "contactForm": {
+                                  "fields": {
+                                    "name": {
+                                      "label": "İsim",
+                                      "placeholder": "Adınız",
+                                      "error": "İsim gereklidir"
+                                    },
+                                    "email": {
+                                      "label": "E-posta",
+                                      "placeholder": "email@adresiniz.com",
+                                      "error": "E-posta gereklidir",
+                                      "invalid": "Geçersiz e-posta adresi"
+                                    },
+                                    "phone": {
+                                      "label": "Telefon (opsiyonel)",
+                                      "placeholder": "+49"
+                                    },
+                                    "company": {
+                                      "label": "Şirket (opsiyonel)",
+                                      "placeholder": "Şirketiniz"
+                                    },
+                                    "package": {
+                                      "label": "İlgilenilen Paket",
+                                      "popular": "Popüler"
+                                    },
+                                    "message": {
+                                      "label": "Mesajınız",
+                                      "placeholder": "Projenizi veya sorularınızı kısaca açıklayın...",
+                                      "error": "Mesaj gereklidir"
+                                    }
+                                  },
+                                  "submit": {
+                                    "button": "Mesaj Gönder",
+                                    "sending": "Gönderiliyor...",
+                                    "error": "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+                                  },
+                                  "success": {
+                                    "title": "Mesaj başarıyla gönderildi!",
+                                    "message": "En kısa sürede size geri döneceğiz."
+                                  },
+                                  "packageDescriptions": {
+                                    "startup": "Yeni kurulan şirketler ve girişimciler için ideal",
+                                    "digital": "Köklü ancak analog çalışan şirketler için ideal",
+                                    "makeover": "Geçiş aşamasındaki şirketler için ideal",
+                                    "growth": "Büyüme odaklı şirketler için ideal"
+                                  }
+                                },
+                                  "whatsappContact": {
+                                    "title": "Direkt WhatsApp İletişimi",
+                                    "subtitle": "Acil sorular için hızlı yanıtlar",
+                                    "status": {
+                                      "available": "Şu anda müsait",
+                                      "unavailable": "Mesai saatleri dışında",
+                                      "hours": "Pzt-Cum, 9:00-17:00"
+                                    },
+                                    "mobile": {
+                                      "title": "Mobil",
+                                      "description": "Akıllı telefonunuzda WhatsApp'ı açın ve aşağıdaki butona dokunun.",
+                                      "button": "WhatsApp'ı aç"
+                                    },
+                                    "call": {
+                                      "description": "Bizi doğrudan arayabilir veya numarayı kopyalayabilirsiniz.",
+                                      "copyButton": "Numarayı kopyala",
+                                      "callButton": "Ara"
+                                    },
+                                    "outOfHours": "Mesai saatleri dışında da bize mesaj yazabilirsiniz. Bir sonraki iş günü size geri döneceğiz.",
+                                    "backButton": "Genel bakışa dön"
+                                  },
+                                    "calendly": {
+                                      "header": {
+                                        "title": "Randevu Alın",
+                                        "subtitle": "30 dakikalık ücretsiz ilk danışmanlık"
+                                      },
+                                      "timezone": {
+                                        "label": "Saat diliminiz",
+                                        "detecting": "Algılanıyor..."
+                                      },
+                                      "loading": {
+                                        "text": "Takvim yükleniyor..."
+                                      },
+                                      "timeSlots": {
+                                        "title": "Müsait Zaman Dilimleri",
+                                        "hours": "Pazartesi - Cuma, 9:00 - 17:00",
+                                        "localTime": "(yerel saatiniz)"
+                                      },
+                                      "back": "Genel bakışa dön"
+                                    },
+                                      "contactpage": {
+                                        "page": {
+                                          "title": "Size nasıl yardımcı olabiliriz?",
+                                          "faq_title": "Sık Sorulan İletişim Soruları",
+                                          "options": {
+                                            "meeting": {
+                                              "title": "İlk Görüşme & Danışma",
+                                              "description": "30 dakikalık video tanışma görüşmesi"
+                                            },
+                                            "project": {
+                                              "title": "Proje Talebi",
+                                              "description": "Özel projeniz için detaylı form"
+                                            },
+                                            "quick": {
+                                              "title": "Hızlı Soru",
+                                              "description": "Hızlı yanıtlar için direkt WhatsApp sohbeti"
+                                            }
+                                          }
+                                        },
+                                        "loading": {
+                                          "calendly": "Takvim yükleniyor...",
+                                          "form": "Form yükleniyor..."
+                                        },
+                                        "status": {
+                                          "online": "Çevrimiçiyiz",
+                                          "offline": "Mesai saatleri dışında",
+                                          "response_time": "Ortalama yanıt süresi",
+                                          "minutes": "dakika",
+                                          "business_hours": "Pzt-Cum, 09:00-17:00",
+                                          "back_text": "Yarın saat 9'da tekrar hizmetinizdeyiz"
+                                       }
+                                      },
+                                        "common": {
+                                          "close": "Kapat"
+                                        },
+                                        "packages": {
+                                          "header": {
+                                            "title": "Paketlerimiz",
+                                            "subtitle": "İhtiyaçlarınıza uygun paketi seçin"
+                                          },
+                                          "cta": {
+                                            "ready": "Bir sonraki adım için hazır mısınız?",
+                                            "support": "Projenizde size destek olmaktan mutluluk duyarız.",
+                                            "request": "Şimdi başvur"
+                                          },                                      
+                                          "popular": "Popüler",
+                                          "startPrice": "başlangıç",
+                                          "onRequest": "Talep üzerine",
+                                          "items": {
+                                            "startup": {
+                                              "title": "Startup Her Şey Dahil",
+                                              "description": "Sıfırdan yüze: Profesyonel bir başlangıç için ihtiyacınız olan her şey",
+                                              "price": 3499,
+                                              "idealFor": "Yeni kurulan işletmeler ve girişimciler için ideal",
+                                              "isPopular": true
+                                            },
+                                            "digital": {
+                                              "title": "Dijital Dönüşüm",
+                                              "description": "İşletmenizi geleceğe hazırlayın",
+                                              "price": 2999,
+                                              "idealFor": "Kurulu ancak analog çalışan işletmeler için ideal",
+                                              "isPopular": false
+                                            },
+                                            "makeover": {
+                                              "title": "Marka Yenileme",
+                                              "description": "Kurulu işletmeler için taze bir soluk",
+                                              "price": 2499,
+                                              "idealFor": "Değişim sürecindeki işletmeler için ideal",
+                                              "isPopular": false
+                                            },
+                                            "growth": {
+                                              "title": "Büyüme Paketi",
+                                              "description": "Daha fazla büyüme için sistematik genişleme ve süreç optimizasyonu",
+                                              "price": null,
+                                              "idealFor": "Büyüme odaklı şirketler için ideal",
+                                              "isPopular": false
+                                            }
+                                          },
+                                          "features": {
+                                            "startup": {
+                                              "sections": [
+                                                {
+                                                  "nr": "01",
+                                                  "title": "Marka Geliştirme",
+                                                  "items": [
+                                                    {
+                                                      "title": "İsim Bulma",
+                                                      "subitems": [
+                                                        "Marka ve Alan Adı Kontrolü",
+                                                        "Dil ve Kültür Kontrolü",
+                                                        "5 Final İsim Önerisi"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Strateji",
+                                                      "subitems": [
+                                                        "Pazar Konumlandırma",
+                                                        "Hedef Kitle Analizi",
+                                                        "Rekabet Analizi",
+                                                        "Trend Analizi"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Kimlik",
+                                                      "subitems": [
+                                                        "Vizyon",
+                                                        "Misyon",
+                                                        "Değerler",
+                                                        "Slogan",
+                                                        "Hikaye",
+                                                        "Ses Tonu ve Üslup"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Logo Tasarımı",
+                                                      "subitems": [
+                                                        "3 Tasarım Konsepti",
+                                                        "Logo Versiyonları (Ana Logo, İkon Versiyonu, Negatif Versiyon)",
+                                                        "Tipografi",
+                                                        "Renk Paletleri",
+                                                        "Tasarım Kılavuzları"
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "nr": "02",
+                                                  "title": "İş İletişimi",
+                                                  "items": [
+                                                    {
+                                                      "title": "İş Mobil Numarası Her Yöne Sınırsız",
+                                                      "subitems": [
+                                                        "Tüm TR şebekelerine sınırsız arama",
+                                                        "Tüm TR şebekelerine sınırsız SMS",
+                                                        "AB dolaşım dahil",
+                                                        "3GB Yüksek Hızlı Veri (5G uyumlu)",
+                                                        "Tamamen Ücretsiz"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "İş Sabit Hattı",
+                                                      "subitems": [
+                                                        "Cep telefonuna otomatik yönlendirme",
+                                                        "Metin-Konuşma özellikli profesyonel sesli mesaj"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Doğrulanmış İş WhatsApp",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "Profesyonel E-posta Adresi",
+                                                      "subitems": [
+                                                        "5 adede kadar kişiselleştirilmiş e-posta adresi",
+                                                        "@sizin-alan-adiniz.com.tr"
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "nr": "03",
+                                                  "title": "İş Malzemeleri",
+                                                  "items": [
+                                                    {
+                                                      "title": "500 Premium Kartvizit",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "100 Premium Antetli Kağıt",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "100 Premium Pencereli Zarf",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "100 Premium Penceresiz Zarf",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "1000 Premium El İlanı",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "Kurumsal Kimlikli Teklif Dosyası",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "Şirket Kaşesi",
+                                                      "subitems": [
+                                                        "Dijital Şirket Kaşesi",
+                                                        "Fiziksel Premium Şirket Kaşesi"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Dijital Şablonlar",
+                                                      "subitems": [
+                                                        "Office Şablonları",
+                                                        "E-posta İmzası",
+                                                        "Sosyal Medya Kiti",
+                                                        "Tüm Basılı Malzemelerin Dijital Şablonları"
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "nr": "04",
+                                                  "title": "Dijital Varlık",
+                                                  "items": [
+                                                    {
+                                                      "title": "Web Siteniz",
+                                                      "subitems": [
+                                                        "Sanat Yönetimi ve UI/UX Tasarım",
+                                                        "Kurumsal Kimlikli Premium Web Tasarım",
+                                                        "Tüm Cihazlar için Responsive Tasarım",
+                                                        "Profesyonel Film ve Fotoğraf Çekimi",
+                                                        "Markaya Özel Görsel Dil"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "İçerik Stratejisi ve Metin Yazarlığı",
+                                                      "subitems": [
+                                                        "Hakkımızda/Ekip",
+                                                        "Hizmetler/Ürünler",
+                                                        "İletişim ve Destek",
+                                                        "Referanslar ve Müşteri Yorumları"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Performans ve Güvenlik",
+                                                      "subitems": [
+                                                        "Performans Optimizasyonu",
+                                                        "SSL Şifreleme (HTTPS)",
+                                                        "KVKK Tam Paketi dahil:",
+                                                        "Çerez Yönetimi",
+                                                        "Gizlilik Politikası",
+                                                        "Yasal Metinler ve Kullanım Koşulları",
+                                                        "Günlük Yedeklemeler",
+                                                        "Hosting ve Alan Adı (12 ay)"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Online Görünürlük",
+                                                      "subitems": [
+                                                        "Google İşletme Profili",
+                                                        "Sektörel Dizinler",
+                                                        "Değerlendirme Yönetimi (opsiyonel)",
+                                                        "Yerel SEO Optimizasyonu (opsiyonel)"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Sosyal Medya Varlığı",
+                                                      "subitems": [
+                                                        "Instagram İşletme Hesabı",
+                                                        "Facebook İşletme Sayfası",
+                                                        "Küçük İlanlar İşletme Hesabı"
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            "digital": {
+                                              "sections": [
+                                                {
+                                                  "nr": "01",
+                                                  "title": "Gelecek Kontrolü ve Strateji",
+                                                  "items": [
+                                                    {
+                                                      "title": "Durum ve Potansiyel Analizi",
+                                                      "subitems": [
+                                                        "Mevcut İş Süreçleri Analizi",
+                                                        "Dijitalleşme Potansiyeli Kontrolü",
+                                                        "Dijital Ortamda Rekabet Analizi",
+                                                        "Hızlı Kazanım Tespiti"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Dijital Strateji",
+                                                      "subitems": [
+                                                        "Dijital Vizyon Geliştirme",
+                                                        "Dijitalleşme Alanlarının Önceliklendirilmesi",
+                                                        "Kaynak ve Bütçe Planlaması",
+                                                        "Yatırım Getirisi Hesaplaması"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Dönüşüm Yol Haritası",
+                                                      "subitems": [
+                                                        "Detaylı Uygulama Planı",
+                                                        "Kilometre Taşı Tanımlaması",
+                                                        "Risk Yönetimi Stratejisi",
+                                                        "Kalite Güvence Konsepti"
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "nr": "02",
+                                                  "title": "İş İletişimi",
+                                                  "items": [
+                                                    {
+                                                      "title": "İş Mobil Numarası Her Yöne Sınırsız",
+                                                      "subitems": [
+                                                        "Tüm TR şebekelerine sınırsız arama",
+                                                        "Tüm TR şebekelerine sınırsız SMS",
+                                                        "AB dolaşım dahil",
+                                                        "3GB Yüksek Hızlı Veri (5G uyumlu)",
+                                                        "Tamamen Ücretsiz"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "İş Sabit Hattı",
+                                                      "subitems": [
+                                                        "Cep telefonuna otomatik yönlendirme",
+                                                        "Metin-Konuşma özellikli profesyonel sesli mesaj"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Doğrulanmış İş WhatsApp",
+                                                      "subitems": []
+                                                    },
+                                                    {
+                                                      "title": "Profesyonel E-posta Adresi",
+                                                      "subitems": [
+                                                        "5 adede kadar kişiselleştirilmiş e-posta adresi",
+                                                        "@sizin-alan-adiniz.com.tr"
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "nr": "03",
+                                                  "title": "Dijital Varlık",
+                                                  "items": [
+                                                    {
+                                                      "title": "Web Siteniz",
+                                                      "subitems": [
+                                                        "Sanat Yönetimi ve UI/UX Tasarım",
+                                                        "Kurumsal Kimlikli Premium Web Tasarım",
+                                                        "Tüm Cihazlar için Responsive Tasarım",
+                                                        "Profesyonel Film ve Fotoğraf Çekimi",
+                                                        "Markaya Özel Görsel Dil"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "İçerik Stratejisi ve Metin Yazarlığı",
+                                                      "subitems": [
+                                                        "Hakkımızda/Ekip",
+                                                        "Hizmetler/Ürünler",
+                                                        "İletişim ve Destek",
+                                                        "Referanslar ve Müşteri Yorumları"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Performans ve Güvenlik",
+                                                      "subitems": [
+                                                        "Performans Optimizasyonu",
+                                                        "SSL Şifreleme (HTTPS)",
+                                                        "KVKK Tam Paketi dahil:",
+                                                        "Çerez Yönetimi",
+                                                        "Gizlilik Politikası",
+                                                        "Yasal Metinler ve Kullanım Koşulları",
+                                                        "Günlük Yedeklemeler",
+                                                        "Hosting ve Alan Adı (12 ay)"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Online Görünürlük",
+                                                      "subitems": [
+                                                        "Google İşletme Profili",
+                                                        "Sektörel Dizinler",
+                                                        "Değerlendirme Yönetimi (opsiyonel)",
+                                                        "Yerel SEO Optimizasyonu (opsiyonel)"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Sosyal Medya Varlığı",
+                                                      "subitems": [
+                                                        "Instagram İşletme Hesabı",
+                                                        "Facebook İşletme Sayfası",
+                                                        "Küçük İlanlar İşletme Hesabı"
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "nr": "04",
+                                                  "title": "Sosyal Medya Dönüşümü",
+                                                  "items": [
+                                                    {
+                                                      "title": "Kanal Stratejisi",
+                                                      "subitems": [
+                                                        "Hedef Kitle Analizi",
+                                                        "Rekabet Analizi",
+                                                        "Kanal Seçimi ve Optimizasyonu",
+                                                        "İçerik Stratejisi"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "Kanal Kurulumu ve Optimizasyonu",
+                                                      "subitems": [
+                                                        "Instagram İşletme Hesabı",
+                                                        "Facebook İşletme Sayfası",
+                                                        "LinkedIn Şirket Profili",
+                                                        "YouTube Kanalı (opsiyonel)"
+                                                      ]
+                                                    },
+                                                    {
+                                                      "title": "İçerik Üretimi",
+                                                      "subitems": [
+                                                        "Profesyonel Fotoğraf Çekimi",
+                                                        "Temel Video Paketi",
+                                                        "İçerik Takvimi (3 ay)",
+                                                        "Sosyal Medya için Tasarım Şablonları"
+                                                      ]
+                                                    },
+                                                    {
+              "title": "Online Görünürlük Optimizasyonu",
+              "subitems": [
+                "Arama Motorları ve Dizinler",
+                "Google İşletme Profili Optimizasyonu",
+                "Sektörel Dizin Güncellemesi",
+                "Yerel SEO Optimizasyonu",
+                "Değerlendirme Yönetimi Kurulumu"
+              ]
+            },
+            {
+              "title": "Sosyal Medya Yenileme",
+              "subitems": [
+                "Instagram İşletme Hesabı Modernizasyonu",
+                "Facebook İşletme Sayfası Güncellemesi",
+                "Profil ve İçerik Denetimi",
+                "Kanal Optimizasyonu"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "makeover": {
+      "sections": [
+        {
+          "nr": "01",
+          "title": "Marka Denetimi ve Yeniden Konumlandırma",
+          "items": [
+            {
+              "title": "Mevcut Marka Kimliği Analizi",
+              "subitems": []
+            },
+            {
+              "title": "Pazar Konumlandırma Kontrolü",
+              "subitems": []
+            },
+            {
+              "title": "Rekabet Analizi",
+              "subitems": []
+            },
+            {
+              "title": "Hedef Kitle Yeniden Tanımlama",
+              "subitems": []
+            },
+            {
+              "title": "Yeni USP'ler Geliştirme",
+              "subitems": []
+            },
+            {
+              "title": "Marka Stratejisi Uyarlama",
+              "subitems": []
+            },
+            {
+              "title": "Marka Hikayesi Revizyon",
+              "subitems": []
+            },
+            {
+              "title": "Misyon ve Vizyon Güncelleme",
+              "subitems": []
+            }
+          ]
+        },
+        {
+          "nr": "02",
+          "title": "Kurumsal Tasarım Yenileme",
+          "items": [
+            {
+              "title": "Logo Analizi",
+              "subitems": []
+            },
+            {
+              "title": "Renk ve Tipografi Değerlendirmesi",
+              "subitems": []
+            },
+            {
+              "title": "Görsel Dil Kontrolü",
+              "subitems": []
+            },
+            {
+              "title": "Logo Modernizasyonu",
+              "subitems": []
+            },
+            {
+              "title": "Yeni Renk Paleti",
+              "subitems": []
+            },
+            {
+              "title": "Çağdaş Tipografi",
+              "subitems": []
+            },
+            {
+              "title": "Güncellenmiş Tasarım Kılavuzları",
+              "subitems": []
+            },
+            {
+              "title": "Revize Edilmiş Görsel Dil",
+              "subitems": []
+            }
+          ]
+        },
+        {
+          "nr": "03",
+          "title": "İş Malzemeleri Yenileme",
+          "items": [
+            {
+              "title": "500 Yeni Tasarımlı Premium Kartvizit",
+              "subitems": []
+            },
+            {
+              "title": "100 Premium Antetli Kağıt",
+              "subitems": []
+            },
+            {
+              "title": "100 Premium Pencereli Zarf",
+              "subitems": []
+            },
+            {
+              "title": "100 Premium Penceresiz Zarf",
+              "subitems": []
+            },
+            {
+              "title": "1000 Premium El İlanı",
+              "subitems": []
+            },
+            {
+              "title": "Kurumsal Kimlikli Yeni Teklif Dosyası",
+              "subitems": []
+            },
+            {
+              "title": "Yeni Tasarımlı Şirket Kaşesi",
+              "subitems": [
+                "Dijital Şirket Kaşesi",
+                "Fiziksel Premium Şirket Kaşesi"
+              ]
+            },
+            {
+              "title": "Dijital Şablonlar",
+              "subitems": [
+                "Güncellenmiş Office Şablonları",
+                "Yeni E-posta İmzası",
+                "Modernize Edilmiş Sosyal Medya Kiti",
+                "Tüm Basılı Malzemelerin Dijital Şablonları"
+              ]
+            }
+          ]
+        },
+        {
+          "nr": "04",
+          "title": "Dijital Modernizasyon",
+          "items": [
+            {
+              "title": "Website Yeniden Yapılandırma",
+              "subitems": [
+                "Website Denetimi ve Analizi",
+                "Modern Responsive Tasarım",
+                "İçerik Taşıma ve Optimizasyon",
+                "Yeni Ürün ve Ekip Fotoğrafları",
+                "SEO Optimizasyonu"
+              ]
+            },
+            {
+              "title": "Performans ve Güvenlik",
+              "subitems": [
+                "Hız Optimizasyonu",
+                "SSL Sertifikası Güncelleme"
+              ]
+            },
+            {
+              "title": "KVKK Tam Paketi",
+              "subitems": [
+                "Çerez Yönetimi",
+                "Gizlilik Politikası Güncelleme",
+                "Yasal Metinler Güncelleme",
+                "Güvenlik Denetimi",
+                "Yedekleme Sistemi"
+              ]
+            },
+            {
+              "title": "Online Görünürlük",
+              "subitems": [
+                "Google İşletme Profili",
+                "Sektörel Dizinler",
+                "Değerlendirme Yönetimi (opsiyonel)",
+                "Yerel SEO Optimizasyonu (opsiyonel)"
+              ]
+            },
+            {
+              "title": "Sosyal Medya Varlığı",
+              "subitems": [
+                "Instagram İşletme Hesabı",
+                "Facebook İşletme Sayfası",
+                "Küçük İlanlar İşletme Hesabı"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "growth": {
+      "sections": [
+        {
+          "nr": "01",
+          "title": "Büyüme Analizi",
+          "items": [
+            {
+              "title": "Pazar Potansiyeli Analizi",
+              "subitems": []
+            },
+            {
+              "title": "Hedef Pazar Belirleme",
+              "subitems": []
+            },
+            {
+              "title": "Pazara Giriş Engelleri",
+              "subitems": []
+            },
+            {
+              "title": "Pazar Hacmi Hesaplama",
+              "subitems": []
+            },
+            {
+              "title": "Rekabet Analizi ve Konumlandırma",
+              "subitems": []
+            },
+            {
+              "title": "Rekabet Avantajları ve USP'ler",
+              "subitems": []
+            },
+            {
+              "title": "Boşluk Analizi",
+              "subitems": []
+            },
+            {
+              "title": "Büyüme Stratejisi",
+              "subitems": [
+                "Büyüme Kaldıraçları Tespiti",
+                "Ölçekleme Modeli",
+                "Genişleme Stratejisi",
+                "KPI Tanımlaması",
+                "Kilometre Taşı Planlaması"
+              ]
+            }
+          ]
+        },
+        {
+          "nr": "02",
+          "title": "Pazarlama Hızlandırma",
+          "items": [
+            {
+              "title": "İçerik Pazarlama Stratejisi",
+              "subitems": []
+            },
+            {
+              "title": "Sosyal Medya Pazarlama Planı",
+              "subitems": []
+            },
+            {
+              "title": "E-posta Pazarlama Kurulumu",
+              "subitems": []
+            },
+            {
+              "title": "Müşteri Potansiyeli Optimizasyonu",
+              "subitems": []
+            },
+            {
+              "title": "Google Reklam Kampanyaları",
+              "subitems": []
+            },
+            {
+              "title": "Sosyal Medya Reklamcılığı",
+              "subitems": []
+            },
+            {
+              "title": "İçerik Üretimi",
+              "subitems": [
+                "İçerik Takvimi",
+                "SEO Optimize Makaleler",
+                "Sosyal Medya İçerikleri",
+                "E-posta Şablonları",
+                "Pazarlama Materyalleri"
+              ]
+            }
+          ]
+        },
+        {
+          "nr": "03",
+          "title": "Satış Geliştirme",
+          "items": [
+            {
+              "title": "Satış Optimizasyonu",
+              "subitems": [
+                "Satış Hunisi Geliştirme",
+                "Satış Süreci Kurulumu",
+                "Profesyonel Sunum Dosyası",
+                "Satış Sunumları"
+              ]
+            },
+            {
+              "title": "Premium Teklif Şablonları",
+              "subitems": []
+            },
+            {
+              "title": "Satış Materyalleri",
+              "subitems": [
+                "Satış Tek Sayfa",
+                "Ürün Katalogları",
+                "Vaka Çalışmaları",
+                "Referans Pazarlama",
+                "Müşteri Yorumları Koleksiyonu"
+              ]
+            },
+            {
+              "title": "Kurumsal Kimlik Genişletme",
+              "subitems": [
+                "Marka Kılavuzu 2.0",
+                "Alt Marka Geliştirme",
+                "Tasarım Sistemi Genişletme"
+              ]
+            }
+          ]
+        },
+        {
+          "nr": "04",
+          "title": "Dijital Ölçekleme",
+          "items": [
+            {
+              "title": "Web Varlığı 2.0",
+              "subitems": [
+                "Çoklu Lokasyon SEO",
+                "Dönüşüm Optimizasyonu",
+                "A/B Test Kurulumu",
+                "İniş Sayfası Sistemi"
+              ]
+            },
+            {
+              "title": "Online İtibar",
+              "subitems": [
+                "PR Stratejisi",
+                "Basın Bülteni Sistemi",
+                "Medya Kiti",
+                "Ödül Planlaması",
+                "Düşünce Liderliği Kurulumu"
+              ]
+            },
+            {
+              "title": "Uluslararası ve Çoklu Dil",
+              "subitems": [
+                "Çok Dilli Website",
+                "Çok Dilli İçerik",
+                "Uluslararası Sosyal Medya",
+                "Yerelleştirilmiş Pazarlama Materyalleri",
+                "Uluslararası SEO"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+}

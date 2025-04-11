@@ -1,0 +1,1458 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "services": "Services"
+  },
+  "buttons": {
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "learn_more": "Learn More"
+  },
+      "hero": {
+        "title": "Your Vision, Our Business: Together Towards Success",
+        "subtitle": "We develop your company from idea to successful market launch",
+        "cta": {
+          "start": "Let's get started!",
+          "discover": "Discover our solutions"
+        },
+        "trusted": "Trusted by leading companies"
+      },
+        "about": {
+          "title": "We Transform Visions into Market Success",
+          "history": {
+            "title": "Our Story",
+            "part1": "Success isn't just about great ideas – it's about the perfect combination of strategy, design, and technology. With this conviction, we founded RoketX in 2019 in a Dortmund co-working space.",
+            "part2": "Our mission was clear from the start: to help companies solve complex challenges and turn visions into measurable successes. Start-ups often failed in implementation, while established companies lost touch. This is where we closed the gap – as a one-stop partner for sustainable business success.",
+            "part3": "Today, we inspire, advise, and support start-ups and industry leaders with holistic strategies. With over 100 successfully accompanied projects, we combine strategic precision, creative excellence, and technological innovation. We don't just create solutions – we shape market leaders."
+          },
+          "timeline": {
+            "2019": {
+              "title": "The Foundation",
+              "description": "Started in a Dortmund co-working space with the vision to make digital innovation accessible."
+            },
+            "2021": {
+              "title": "Expansion & Growth",
+              "description": "50+ successful projects and building a strong partner network."
+            },
+            "2024": {
+              "title": "Market Leader",
+              "description": "100+ projects, multiple awards, and leading in digital transformation."
+            }
+          },
+          "achievements": {
+            "projects": {
+              "number": "100+",
+              "text": "successfully implemented projects"
+            },
+            "satisfaction": {
+              "number": "97%",
+              "text": "customer satisfaction"
+            },
+            "experience": {
+              "number": "7+",
+              "text": "years of industry expertise"
+            }
+          },
+          "partnerships": {
+            "title": "Strong Partnerships"
+          },
+          "awards": {
+            "title": "Awards 2023/24",
+            "list": [
+              "Digital Transformation Award",
+              "Best Agency for Startups",
+              "Top 10 Innovative Companies",
+              "German Founder Award"
+            ]
+          },
+          "quote": "“Success is no coincidence – it's the result of the right strategy at the right time, with the right partners.”",
+          "cta": "Let's write your success story together"
+        },
+          "faq": {
+            "title": "Frequently Asked Questions",
+            "subtitle": "Everything you need to know about our services",
+            "noAnswer": "Haven't found the answer to your question?",
+            "contact": "Contact us",
+            "items": [
+              {
+                "question": "What are your core services as a business consultancy?",
+                "answer": "Our core services cover four main areas: Startup All-in-One for new businesses, Digital Transform for digital transformation of existing companies, Makeover for repositioning, and Growth for companies in the growth phase. Each package includes comprehensive services from brand development to business equipment to digital presence."
+              },
+              {
+                "question": "What sets roketX apart from other consulting companies?",
+                "answer": "We offer a holistic approach with all-in-one solutions specifically tailored to each business phase. Our unique selling proposition is the combination of strategic consulting and practical implementation - from brand development to technical implementation, all from a single source."
+              },
+              {
+                "question": "What company sizes are your services suitable for?",
+                "answer": "Our services are designed for both startups and individual entrepreneurs as well as established medium-sized companies. The packages are flexible and can be adapted to your specific needs, regardless of company size."
+              },
+              {
+                "question": "How does the collaboration work specifically?",
+                "answer": "After the initial consultation and package selection, we create a detailed project plan. You receive a personal contact who guides you through the entire process. Implementation takes place step by step according to our proven system, with you being involved in all important decisions."
+              },
+              {
+                "question": "How long does it take to implement the various packages?",
+                "answer": "Implementation duration varies depending on package and requirements. Guidelines are: Startup package 8-12 weeks, Digital Transform 8-10 weeks, Makeover 10-12 weeks, and Growth package 10-14 weeks. The exact timeline is coordinated individually with you."
+              },
+              {
+                "question": "How flexible are the packages adaptable?",
+                "answer": "All packages can be modularly adapted. We analyze your specific needs and can add or remove services. The basic structure of the packages ensures that all important areas are covered."
+              },
+              {
+                "question": "How are the costs structured and what payment options are there?",
+                "answer": "Prices vary depending on package and individual scope. We offer various payment models, from one-time payments to flexible installment plans. In a free initial consultation, we create a customized offer for you."
+              },
+              {
+                "question": "What technical services are included in the packages?",
+                "answer": "All packages include professional hosting, SSL certificates, regular backups, and technical support. The mobile and communication packages include all-net flats and data volume. Updates and maintenance are included for 12 months."
+              }
+            ]
+          },
+            "contact": {
+              "header": {
+                "title": "Together Towards Success",
+                "subtitle": "Choose your package and get started right away!"
+              },
+              "steps": {
+                "package": "Choose Package",
+                "contact": "Contact Details",
+                "message": "Message"
+              },
+              "packageSelector": {
+                "title": "Choose Your Package",
+                "popular": "Popular",
+                "error": "Please select a package"
+              },
+              "form": {
+                "contact": {
+                  "title": "Your Contact Details",
+                  "name": {
+                    "label": "Name",
+                    "error": "Name is required"
+                  },
+                  "email": {
+                    "label": "Email",
+                    "error": "Email is required",
+                    "invalid": "Invalid email address"
+                  },
+                  "phone": {
+                    "label": "Phone (optional)"
+                  }
+                },
+                "message": {
+                  "title": "Your Message",
+                  "label": "Message (optional)",
+                  "placeholder": "Briefly describe your project or questions..."
+                },
+                "privacy": {
+                  "label": "I agree to the Privacy Policy",
+                  "error": "Please agree to the privacy policy",
+                  "link": "Privacy Policy"
+                },
+                "error": {
+                  "generic": "An error occurred. Please try again later."
+                }
+              },
+              "buttons": {
+                "next": "Next",
+                "back": "Back",
+                "submit": "Submit",
+                "sending": "Sending..."
+              },
+              "success": {
+                "title": "Thank you for your inquiry!",
+                "message": "We will get back to you as soon as possible."
+              }
+            },
+              "support": {
+                "header": {
+                  "title": "Support & Guarantee",
+                  "subtitle": "Comprehensive support and security for your success"
+                },
+                "features": {
+                  "setup": {
+                    "title": "All-Round Carefree Setup",
+                    "items": [
+                      "Personal contact person",
+                      "Complete setup of all services",
+                      "3h basic training for your team",
+                      "30 days intensive support"
+                    ]
+                  },
+                  "premium": {
+                    "title": "Premium Support",
+                    "items": [
+                      "Response time under 24h",
+                      "Remote support",
+                      "Emergency hotline",
+                      "Regular updates"
+                    ]
+                  },
+                  "guarantee": {
+                    "title": "Our Guarantees",
+                    "items": [
+                      "30 days money-back",
+                      "99.9% availability",
+                      "GDPR compliant",
+                      "Regular backups"
+                    ]
+                  },
+                  "optional": {
+                    "title": "Optional Services",
+                    "items": [
+                      "Extra training",
+                      "Content creation",
+                      "SEO optimization",
+                      "Marketing consulting"
+                    ]
+                  }
+                },
+                "cta": {
+                  "question": "Have questions about our support services?",
+                  "button": "Contact us"
+                }
+              },
+                "testimonials": {
+                  "header": {
+                    "title": "What Our Clients Say",
+                    "subtitle": "Learn how we help our clients successfully manage their digital transformation"
+                  },
+                  "navigation": {
+                    "previous": "Previous testimonial",
+                    "next": "Next testimonial",
+                    "goto": "Go to testimonial"
+                  },
+                  "items": [
+                    {
+                      "content": "Initially, I was skeptical whether an external team would understand our very specific requirements. After the first workshop with roketX, this concern was gone. I particularly appreciated that they constructively challenged us - this led to a much better solution in the end.",
+                      "name": "Lisa Burghardt",
+                      "position": "Co-founder, BetterLife GmbH",
+                      "award": "Founder's Award Baden-Württemberg 2022"
+                    },
+                    {
+                      "content": "As a 40-year-old family business, we struggled with digitalization. We had two failed projects behind us before we met roketX. They first listened carefully and then developed a plan with us step by step. Sure, there were setbacks, but today our digital ordering system works flawlessly.",
+                      "name": "Frank Weber",
+                      "position": "CEO, Weber & Sons Metalwork"
+                    },
+                    {
+                      "content": "roketX modernized our patient management system. What others called 'impossible', they solved. Sure, sometimes we had to wait a bit longer for responses when they were busy - but the top quality of the work more than makes up for it.",
+                      "name": "Ingridt Lose",
+                      "position": "Digital Lead, Schmidt & Partners Medical Practice"
+                    },
+                    {
+                      "content": "After 6 months of collaboration, I can say: The investment was worth it. Our new CRM system saves the team at least 2 hours of work time daily. What I particularly like: The colleagues at roketX are still accessible after go-live if something gets stuck.",
+                      "name": "Yusuf Karadas",
+                      "position": "CEO, TechVision GmbH",
+                      "award": "Innovation Award for Business 2023"
+                    },
+                    {
+                      "content": "Finally, an IT service provider who doesn't speak in technical jargon! The team managed to explain complex topics to us in a way that even our non-technical employees understood everything. The new intranet was therefore very well received by everyone - and that's saying something with 200 employees!",
+                      "name": "Marina Kovač",
+                      "position": "Head of Communications, InnoSpace"
+                    }
+                  ]
+                },
+                    "footer": {
+                      "description": "We develop your vision into a market-ready company - from conception to successful market launch.",
+                      "contact": {
+                        "title": "Contact",
+                        "phone": "0173 852 84 82",
+                        "email": "info@roketX.com",
+                        "address": {
+                          "street": "Rheinische Str. 220",
+                          "city": "44147 Dortmund"
+                        }
+                      },
+                      "legal": {
+                        "title": "Legal",
+                        "imprint": "Imprint",
+                        "terms": "Terms",
+                        "privacy": "Privacy"
+                      },
+                      "cta": {
+                        "title": "Contact Us",
+                        "button": "Free Initial Consultation"
+                      },
+                      "copyright": "©  {{year}} roketX. All rights reserved.",
+                      "social": {
+                        "instagram": "@roketX.de"
+                      }
+                    },
+                      "notFound": {
+                        "title": "404",
+                        "heading": "Page Not Found",
+                        "description": "Sorry, but the page you are looking for doesn't exist or has been moved.",
+                        "button": "Back to Homepage"
+                      },
+                        "imprint": {
+                          "title": "Legal Notice",
+                          "subtitle": "Legal information and details about our company",
+                          "sections": [
+                            {
+                              "title": "Information according to § 5 TMG",
+                              "content": [
+                                "TREU Service GmbH",
+                                "Rheinische Straße 220",
+                                "44147 Dortmund"
+                              ]
+                            },
+                            {
+                              "title": "Commercial Register",
+                              "content": [
+                                "HRB 20627",
+                                "Registry Court: Dortmund"
+                              ]
+                            },
+                            {
+                              "title": "Represented by",
+                              "content": [
+                                "Hasan Hüseyin Yilmaz",
+                                "Managing Director"
+                              ]
+                            },
+                            {
+                              "title": "Contact",
+                              "content": [
+                                "Phone: 0231 15044352",
+                                "Email: info@roketx.de"
+                              ]
+                            },
+                            {
+                              "title": "VAT ID",
+                              "content": [
+                                "VAT identification number according to § 27a of the German VAT law:",
+                                "DE362838091"
+                              ]
+                            },
+                            {
+                              "title": "Professional Title and Regulations",
+                              "content": [
+                                "Professional Title: Craftsman",
+                                "Responsible Chamber:",
+                                "Chamber of Industry and Commerce Dortmund",
+                                "Märkische Str. 120",
+                                "44141 Dortmund",
+                                "Awarded in: Germany"
+                              ]
+                            },
+                            {
+                              "title": "Supervisory Authority",
+                              "content": [
+                                "City of Dortmund",
+                                "Olpe 1",
+                                "44135 Dortmund"
+                              ]
+                            },
+                            {
+                              "title": "Online Dispute Resolution according to Art. 14 Sec. 1 ODR-VO",
+                              "content": [
+                                "The European Commission provides a platform for online dispute resolution (ODR) which can be accessed at https://ec.europa.eu/consumers/odr/"
+                              ],
+                              "hasLink": true
+                            },
+                            {
+                              "title": "Copyright",
+                              "content": [
+                                "The content and works created by the site operators on these pages are subject to German copyright law. The reproduction, editing, distribution, and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator."
+                              ]
+                            }
+                          ]
+                        },
+                          "terms": {
+                            "title": "General Terms and Conditions",
+                            "subtitle": "The framework conditions of our cooperation",
+                            "sections": [
+                              {
+                                "title": "§1 Scope and Provider",
+                                "content": [
+                                  "(1) These General Terms and Conditions apply to all orders, services, and deliverables between TREU Service GmbH - hereinafter referred to as 'roketX' - and the client.",
+                                  "TREU Service GmbH",
+                                  "Rheinische Straße 220",
+                                  "44147 Dortmund",
+                                  "Commercial Register: HRB 20627",
+                                  "Registry Court: Dortmund"
+                                ]
+                              },
+                              {
+                                "title": "§2 Subject Matter of Contract",
+                                "content": [
+                                  "(1) RoketX offers the following services:",
+                                  "- Start-up All-in-One",
+                                  "- Digital Transformation",
+                                  "- Brand Makeover",
+                                  "- Growth",
+                                  "(2) The exact scope of services is defined in the respective service description in the offer."
+                                ]
+                              },
+                              {
+                                "title": "§3 Conclusion of Contract",
+                                "content": [
+                                  "(1) The presentation of services does not constitute a legally binding offer.",
+                                  "(2) After receiving an inquiry, RoketX creates an individual offer. The contract is concluded when the client accepts the offer."
+                                ]
+                              },
+                              {
+                                "title": "§4 Remuneration and Payment Terms",
+                                "content": [
+                                  "(1) Remuneration is based on the agreed package price or hourly rate.",
+                                  "(2) All prices are subject to statutory VAT.",
+                                  "(3) Payment is made by bank transfer and is due as follows:",
+                                  "- 50% of the remuneration upon conclusion of contract",
+                                  "- 50% after completion or acceptance"
+                                ]
+                              },
+                              {
+                                "title": "§5 Service Provision and Cooperation Obligations",
+                                "content": [
+                                  "(1) RoketX provides the agreed services to the best of its knowledge and belief.",
+                                  "(2) The client is obligated to provide RoketX with all documents and information necessary for the provision of services in a timely manner."
+                                ]
+                              },
+                              {
+                                "title": "§6 Acceptance",
+                                "content": [
+                                  "(1) After completion of the agreed services, the client will be requested to accept the work.",
+                                  "(2) Acceptance is deemed to have occurred if the client does not report significant defects in writing within 14 days after being requested to accept."
+                                ]
+                              },
+                              {
+                                "title": "§7 Termination and Cancellation",
+                                "content": [
+                                  "(1) The contract can be terminated by either party with 30 days notice to the end of the month.",
+                                  "(2) In case of cancellation by the client, the following cancellation fees apply:",
+                                  "- Up to 14 days before project start: 25% of the order sum",
+                                  "- Up to 7 days before project start: 50% of the order sum",
+                                  "- Thereafter: 75% of the order sum"
+                                ]
+                              },
+                              {
+                                "title": "§8 Warranty and Liability",
+                                "content": [
+                                  "(1) RoketX is only liable for damages in case of intent or gross negligence.",
+                                  "(2) Liability is limited to foreseeable, typically occurring damage.",
+                                  "(3) The warranty period is 12 months from acceptance."
+                                ]
+                              },
+                              {
+                                "title": "§9 Confidentiality and Data Protection",
+                                "content": [
+                                  "(1) Both parties commit to treating all information obtained during the cooperation as confidential.",
+                                  "(2) The processing of personal data is carried out in accordance with our privacy policy."
+                                ]
+                              },
+                              {
+                                "title": "§10 Final Provisions",
+                                "content": [
+                                  "(1) The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods.",
+                                  "(2) The place of jurisdiction for all disputes is Dortmund.",
+                                  "(3) Should individual provisions of these terms be invalid, the validity of the remaining provisions shall remain unaffected."
+                                ]
+                              }
+                            ]
+                          },
+                            "privacy": {
+                              "title": "Privacy Policy",
+                              "subtitle": "Information about data protection and your rights",
+                              "sections": [
+                                {
+                                  "title": "Responsible Entity",
+                                  "content": [
+                                    "TREU Service GmbH",
+                                    "Rheinische Straße 220",
+                                    "44147 Dortmund",
+                                    "Phone: 0231 15044352",
+                                    "Email: info@roketx.de"
+                                  ]
+                                },
+                                {
+                                  "title": "Basic Information",
+                                  "content": [
+                                    "This privacy policy informs you about the nature, scope, and purpose of the processing of personal data on our website.",
+                                    "Personal data is information that relates to an identified or identifiable natural person."
+                                  ]
+                                },
+                                {
+                                  "title": "Cookies",
+                                  "content": [
+                                    "Our website uses cookies. These are small text files that are stored on your device. Your browser accesses these files.",
+                                    "We use the following types of cookies:",
+                                    "- Technically necessary cookies: These are required for the basic functions of the website to work properly.",
+                                    "- Preference cookies: These allow the website to remember information that affects the behavior or appearance of the website.",
+                                    "You can set your browser to inform you about the setting of cookies and decide individually about their acceptance or exclude the acceptance of cookies in general."
+                                  ]
+                                },
+                                {
+                                  "title": "Social Media Plugins",
+                                  "content": [
+                                    "Social media plugins from Instagram are integrated on our website. When you visit a page on our website that contains such a plugin, your browser establishes a direct connection to Instagram's servers.",
+                                    "Instagram thereby receives the information that you have accessed the corresponding page of our website. If you are logged into your Instagram account at the time of your visit, Instagram can associate the visit with your account."
+                                  ]
+                                },
+                                {
+                                  "title": "Your Rights under GDPR",
+                                  "content": [
+                                    "Under GDPR, you have the following rights:",
+                                    "- Right to information (Art. 15 GDPR): You can request information about your processed personal data.",
+                                    "- Right to rectification (Art. 16 GDPR): You can request the correction of incorrect data or the completion of your stored data.",
+                                    "- Right to erasure (Art. 17 GDPR): You can request the deletion of your stored data.",
+                                    "- Right to restriction of processing (Art. 18 GDPR)",
+                                    "- Right to data portability (Art. 20 GDPR)",
+                                    "- Right to object (Art. 21 GDPR)",
+                                    "- Right to lodge a complaint with a supervisory authority (Art. 77 GDPR)"
+                                  ]
+                                },
+                                {
+                                  "title": "Contact",
+                                  "content": [
+                                    "If you have any questions about data protection, please send us an email or contact our data protection officer directly:",
+                                    "TREU Service GmbH",
+                                    "Data Protection Officer",
+                                    "Rheinische Straße 220",
+                                    "44147 Dortmund",
+                                    "Email: info@roketx.de"
+                                  ]
+                                }
+                              ]
+                            },
+                              "stats": {
+                                "title": "Don't Miss the Digital Connection",
+                                "subtitle": "The numbers clearly show: The difference between success and failure lies in professional digital presence",
+                                "stats": [
+                                  {
+                                    "percentage": 92,
+                                    "text": "of startups fail in the first 3 years without professional branding and digital presence",
+                                    "subtext": "The most common cause: lack of digital presence"
+                                  },
+                                  {
+                                    "percentage": 340,
+                                    "text": "higher survival rate through professional brand development and business equipment",
+                                    "subtext": "The decisive advantage for your business"
+                                  },
+                                  {
+                                    "percentage": 76,
+                                    "text": "of traditional companies lose market share to digital-native competition",
+                                    "subtext": "Be a pioneer instead of a follower"
+                                  },
+                                  {
+                                    "percentage": 83,
+                                    "text": "of customers today expect digital interaction possibilities with companies",
+                                    "subtext": "Your chance to meet exactly these expectations"
+                                  }
+                                ],
+                                "cta": {
+                                  "title": "The good news: You now have the chance to do it right",
+                                  "button": "Schedule Free Strategy Session",
+                                  "dataSource": "Data based on current market analyses 2023/24"
+                                }
+                              },
+                                "contactFaqs": {
+                                  "groups": {
+                                    "general": {
+                                      "title": "General Questions",
+                                      "items": [
+                                        {
+                                          "q": "How does the initial contact work?",
+                                          "a": "After your inquiry, we will get back to you within 24 hours. When booking an appointment, you can directly choose a suitable time for a 30-minute initial consultation."
+                                        },
+                                        {
+                                          "q": "In which languages can we communicate?",
+                                          "a": "We communicate in German and English. Our developers also speak Turkish."
+                                        }
+                                      ]
+                                    },
+                                    "meetings": {
+                                      "title": "Appointments & Availability",
+                                      "items": [
+                                        {
+                                          "q": "When are you available?",
+                                          "a": "Our business hours are Monday to Friday from 9:00 AM to 5:00 PM. In urgent cases, we are also available via WhatsApp outside these hours."
+                                        },
+                                        {
+                                          "q": "How long does an initial consultation take?",
+                                          "a": "The free initial consultation takes 30 minutes. If needed, we can extend the appointment or schedule a follow-up meeting."
+                                        }
+                                      ]
+                                    },
+                                    "project": {
+                                      "title": "Project Inquiries",
+                                      "items": [
+                                        {
+                                          "q": "What information do you need for a quote?",
+                                          "a": "Helpful information includes: project scope, timeline, budget expectations, and special requirements. The more detailed, the better we can create a suitable offer."
+                                        },
+                                        {
+                                          "q": "How quickly can you start a project?",
+                                          "a": "The start time varies depending on current project volume and the scope of your project. Typically, we can begin implementation within 2-4 weeks."
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                  "contactForm": {
+                                    "fields": {
+                                      "name": {
+                                        "label": "Name",
+                                        "placeholder": "Your name",
+                                        "error": "Name is required"
+                                      },
+                                      "email": {
+                                        "label": "Email",
+                                        "placeholder": "your@email.com",
+                                        "error": "Email is required",
+                                        "invalid": "Invalid email address"
+                                      },
+                                      "phone": {
+                                        "label": "Phone (optional)",
+                                        "placeholder": "+49"
+                                      },
+                                      "company": {
+                                        "label": "Company (optional)",
+                                        "placeholder": "Your company"
+                                      },
+                                      "package": {
+                                        "label": "Interested Package",
+                                        "popular": "Popular"
+                                      },
+                                      "message": {
+                                        "label": "Your Message",
+                                        "placeholder": "Briefly describe your project or questions...",
+                                        "error": "Message is required"
+                                      }
+                                    },
+                                    "submit": {
+                                      "button": "Send Message",
+                                      "sending": "Sending...",
+                                      "error": "An error occurred. Please try again later."
+                                    },
+                                    "success": {
+                                      "title": "Message sent successfully!",
+                                      "message": "We will get back to you as soon as possible."
+                                    },
+                                    "packageDescriptions": {
+                                      "startup": "Ideal for startups and entrepreneurs",
+                                      "digital": "Ideal for established but analog-working companies",
+                                      "makeover": "Ideal for companies in transition phase",
+                                      "growth": "Ideal for growth-oriented companies"
+                                    }
+                                  },
+                                    "whatsappContact": {
+                                      "title": "Direct WhatsApp Contact",
+                                      "subtitle": "Quick answers for urgent questions",
+                                      "status": {
+                                        "available": "Now available",
+                                        "unavailable": "Outside business hours",
+                                        "hours": "Mon-Fri, 9 AM - 5 PM"
+                                      },
+                                      "mobile": {
+                                        "title": "Mobile",
+                                        "description": "Open WhatsApp on your smartphone and tap the button below.",
+                                        "button": "Open WhatsApp"
+                                      },
+                                      "call": {
+                                        "description": "You can also call us directly or copy the number.",
+                                        "copyButton": "Copy number",
+                                        "callButton": "Call"
+                                      },
+                                      "outOfHours": "You can also write us a message outside of business hours. We will get back to you on the next business day.",
+                                      "backButton": "Back to overview"
+                                    },
+                                      "calendly": {
+                                        "header": {
+                                          "title": "Schedule an Appointment",
+                                          "subtitle": "30 minutes free initial consultation"
+                                        },
+                                        "timezone": {
+                                          "label": "Your timezone",
+                                          "detecting": "Detecting..."
+                                        },
+                                        "loading": {
+                                          "text": "Loading calendar..."
+                                        },
+                                        "timeSlots": {
+                                          "title": "Available Time Slots",
+                                          "hours": "Monday - Friday, 9:00 AM - 5:00 PM",
+                                          "localTime": "(your local time)"
+                                        },
+                                        "back": "Back to overview"
+                                      },
+                                        "contactpage": {
+                                          "page": {
+                                            "title": "How can we help you?",
+                                            "faq_title": "Frequently Asked Contact Questions",
+                                            "options": {
+                                              "meeting": {
+                                                "title": "Initial Consultation",
+                                                "description": "30-minute video introduction meeting"
+                                              },
+                                              "project": {
+                                                "title": "Project Inquiry",
+                                                "description": "Detailed form for your specific project"
+                                              },
+                                              "quick": {
+                                                "title": "Quick Question",
+                                                "description": "Direct WhatsApp chat for quick answers"
+                                              }
+                                            }
+                                          },
+                                          "loading": {
+                                            "calendly": "Loading calendar...",
+                                            "form": "Loading form..."
+                                          },
+                                          "status": {
+                                            "online": "We are online",
+                                            "offline": "Outside business hours",
+                                            "response_time": "Average response time",
+                                            "minutes": "minutes",
+                                            "business_hours": "Mon-Fri, 9:00 AM-5:00 PM",
+                                            "back_text": "We'll be back tomorrow at 9 AM"
+                                          }
+                                        },
+                                          "common": {
+                                            "close": "Close"
+                                          },
+                                          "packages": {
+                                            "header": {
+                                              "title": "Our Packages",
+                                              "subtitle": "Choose the right package for your needs"
+                                            },
+                                            "cta": {
+                                              "ready": "Ready for the next step?",
+                                              "support": "We look forward to supporting you with your project.",
+                                              "request": "Request now"
+                                            },                                      
+                                            "popular": "Popular",
+                                            "startPrice": "from",
+                                            "onRequest": "On Request",
+                                            "items": {
+                                              "startup": {
+                                                "title": "Startup All-in-One",
+                                                "description": "From zero to hundred: Everything you need for a professional start",
+                                                "price": 3499,
+                                                "idealFor": "Ideal for new businesses and entrepreneurs",
+                                                "isPopular": true
+                                              },
+                                              "digital": {
+                                                "title": "Digital Transform",
+                                                "description": "Digitize your business for the future",
+                                                "price": 2999,
+                                                "idealFor": "Ideal for established but analog-operating businesses",
+                                                "isPopular": false
+                                              },
+                                              "makeover": {
+                                                "title": "Brand Makeover",
+                                                "description": "Fresh wind for established businesses",
+                                                "price": 2499,
+                                                "idealFor": "Ideal for businesses in transition phase",
+                                                "isPopular": false
+                                              },
+                                              "growth": {
+                                                "title": "Growth Package",
+                                                "description": "Systematic expansion and process optimization for more growth",
+                                                "price": null,
+                                                "idealFor": "Ideal for growth-oriented companies",
+                                                "isPopular": false
+                                              }
+                                            },
+                                            "features": {
+                                              "startup": {
+                                                "sections": [
+                                                  {
+                                                    "nr": "01",
+                                                    "title": "Brand Development",
+                                                    "items": [
+                                                      {
+                                                        "title": "Name Finding",
+                                                        "subitems": [
+                                                          "Brand & Domain Check",
+                                                          "Language & Culture Check",
+                                                          "5 Final Name Suggestions"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Strategy",
+                                                        "subitems": [
+                                                          "Market Positioning",
+                                                          "Target Group Analysis",
+                                                          "Competitor Analysis",
+                                                          "Trend Analysis"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Identity",
+                                                        "subitems": [
+                                                          "Vision",
+                                                          "Mission",
+                                                          "Values",
+                                                          "Slogan",
+                                                          "Story",
+                                                          "Voice & Tone"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Logo Design",
+                                                        "subitems": [
+                                                          "3 Design Concepts",
+                                                          "Logo Versions (Main Logo, Icon Version, Negative Version)",
+                                                          "Typography",
+                                                          "Color Palettes",
+                                                          "Design Guidelines"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "02",
+                                                    "title": "Business Communication",
+                                                    "items": [
+                                                      {
+                                                        "title": "Business Mobile Number All-Net-Flat",
+                                                        "subitems": [
+                                                          "Unlimited calls to all domestic networks",
+                                                          "Unlimited SMS to all domestic networks",
+                                                          "EU roaming included",
+                                                          "3GB High-Speed Data (5G-capable)",
+                                                          "Completely Free"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Business Landline",
+                                                        "subitems": [
+                                                          "Automatic forwarding to mobile phone",
+                                                          "Professional voicemail with text-to-speech"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Verified Business WhatsApp",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Professional Email Address",
+                                                        "subitems": [
+                                                          "Up to 5 personalized email addresses",
+                                                          "@your-domain.com"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "03",
+                                                    "title": "Business Equipment",
+                                                    "items": [
+                                                      {
+                                                        "title": "500 Premium Business Cards",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "100 Premium Letterheads",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "100 Premium Envelopes with Window",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "100 Premium Envelopes without Window",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "1000 Premium Flyers",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Corporate Design Proposal Folder",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Company Stamp",
+                                                        "subitems": [
+                                                          "Digital Company Stamp",
+                                                          "Physical Premium Company Stamp"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Digital Templates",
+                                                        "subitems": [
+                                                          "Office Templates",
+                                                          "Email Signature",
+                                                          "Social Media Kit",
+                                                          "Digital Templates of All Print Materials"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "04",
+                                                    "title": "Digital Presence",
+                                                    "items": [
+                                                      {
+                                                        "title": "Your Website",
+                                                        "subitems": [
+                                                          "Art Direction & UI/UX Design",
+                                                          "Premium Web Design in Corporate Design",
+                                                          "Responsive Design for All Devices",
+                                                          "Professional Film & Photography",
+                                                          "Brand-specific Visual Language"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Content Strategy & Copywriting",
+                                                        "subitems": [
+                                                          "About Us/Team",
+                                                          "Services/Products",
+                                                          "Contact & Support",
+                                                          "References & Testimonials"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Performance & Security",
+                                                        "subitems": [
+                                                          "Performance Optimization",
+                                                          "SSL Encryption (HTTPS)",
+                                                          "GDPR Complete Package including:",
+                                                          "Cookie Management",
+                                                          "Privacy Policy",
+                                                          "Legal Notice & Terms",
+                                                          "Daily Backups",
+                                                          "Hosting & Domain (12 months)"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Online Visibility",
+                                                        "subitems": [
+                                                          "Google Business Profile",
+                                                          "Business Directories (Yellow Pages & Local)",
+                                                          "Review Management (optional)",
+                                                          "Local Search Engine Optimization (optional)"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Social Media Presence",
+                                                        "subitems": [
+                                                          "Instagram Business Account",
+                                                          "Facebook Business Page",
+                                                          "Classifieds Business Account"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              "digital": {
+                                                "sections": [
+                                                  {
+                                                    "nr": "01",
+                                                    "title": "Future Check & Strategy",
+                                                    "items": [
+                                                      {
+                                                        "title": "Status & Potential Analysis",
+                                                        "subitems": [
+                                                          "Analysis of Current Business Processes",
+                                                          "Digitalization Potential Check",
+                                                          "Digital Environment Competition Analysis",
+                                                          "Quick-Wins Identification"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Digital Strategy",
+                                                        "subitems": [
+                                                          "Development of Digital Vision",
+                                                          "Prioritization of Digitalization Fields",
+                                                          "Resource & Budget Planning",
+                                                          "ROI Calculation of Measures"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Transformation Roadmap",
+                                                        "subitems": [
+                                                          "Detailed Implementation Plan",
+                                                          "Milestone Definition",
+                                                          "Risk Management Strategy",
+                                                          "Quality Assurance Concept"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "02",
+                                                    "title": "Business Communication",
+                                                    "items": [
+                                                      {
+                                                        "title": "Business Mobile Number All-Net-Flat",
+                                                        "subitems": [
+                                                          "Unlimited calls to all domestic networks",
+                                                          "Unlimited SMS to all domestic networks",
+                                                          "EU roaming included",
+                                                          "3GB High-Speed Data (5G-capable)",
+                                                          "Completely Free"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Business Landline",
+                                                        "subitems": [
+                                                          "Automatic forwarding to mobile phone",
+                                                          "Professional voicemail with text-to-speech"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Verified Business WhatsApp",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Professional Email Address",
+                                                        "subitems": [
+                                                          "Up to 5 personalized email addresses",
+                                                          "@your-domain.com"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "03",
+                                                    "title": "Digital Presence",
+                                                    "items": [
+                                                      {
+                                                        "title": "Your Website",
+                                                        "subitems": [
+                                                          "Art Direction & UI/UX Design",
+                                                          "Premium Web Design in Corporate Design",
+                                                          "Responsive Design for All Devices",
+                                                          "Professional Film & Photography",
+                                                          "Brand-specific Visual Language"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Content Strategy & Copywriting",
+                                                        "subitems": [
+                                                          "About Us/Team",
+                                                          "Services/Products",
+                                                          "Contact & Support",
+                                                          "References & Testimonials"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Performance & Security",
+                                                        "subitems": [
+                                                          "Performance Optimization",
+                                                          "SSL Encryption (HTTPS)",
+                                                          "GDPR Complete Package including:",
+                                                          "Cookie Management",
+                                                          "Privacy Policy",
+                                                          "Legal Notice & Terms",
+                                                          "Daily Backups",
+                                                          "Hosting & Domain (12 months)"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Online Visibility",
+                                                        "subitems": [
+                                                          "Google Business Profile",
+                                                          "Business Directories",
+                                                          "Review Management (optional)",
+                                                          "Local SEO Optimization (optional)"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Social Media Presence",
+                                                        "subitems": [
+                                                          "Instagram Business Account",
+                                                          "Facebook Business Page",
+                                                          "Classifieds Business Account"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "04",
+                                                    "title": "Social Media Transformation",
+                                                    "items": [
+                                                      {
+                                                        "title": "Channel Strategy",
+                                                        "subitems": [
+                                                          "Target Group Analysis",
+                                                          "Competition Analysis",
+                                                          "Channel Selection & Optimization",
+                                                          "Content Strategy"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Channel Setup & Optimization",
+                                                        "subitems": [
+                                                          "Instagram Business Account",
+                                                          "Facebook Business Page",
+                                                          "LinkedIn Company Profile",
+                                                          "YouTube Channel (optional)"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Content Production",
+                                                        "subitems": [
+                                                          "Professional Photo Shoot",
+                                                          "Basic Video Package",
+                                                          "Content Calendar (3 months)",
+                                                          "Design Templates for Social Media"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Online Visibility Optimization",
+                                                        "subitems": [
+                                                          "Search Engines & Directories",
+                                                          "Google Business Profile Optimization",
+                                                          "Business Directory Updates",
+                                                          "Local SEO Optimization",
+                                                          "Review Management Setup"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Social Media Refresh",
+                                                        "subitems": [
+                                                          "Instagram Business Account Modernization",
+                                                          "Facebook Business Page Update",
+                                                          "Profile & Content Audit",
+                                                          "Channel Optimization"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  }
+                                                ]
+                                              },
+                                              "makeover": {
+                                                "sections": [
+                                                  {
+                                                    "nr": "01",
+                                                    "title": "Brand Audit & Repositioning",
+                                                    "items": [
+                                                      {
+                                                        "title": "Analysis of Existing Brand Identity",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Market Positioning Check",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Competition Analysis",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Target Group Redefinition",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Development of New USPs",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Brand Strategy Adaptation",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Brand Story Revision",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Mission & Vision Update",
+                                                        "subitems": []
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "02",
+                                                    "title": "Corporate Design Refresh",
+                                                    "items": [
+                                                      {
+                                                        "title": "Logo Analysis",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Color and Typography Evaluation",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Visual Language Check",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Logo Modernization",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "New Color Palette",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Contemporary Typography",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Updated Design Guidelines",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Revised Visual Language",
+                                                        "subitems": []
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "03",
+                                                    "title": "Business Materials Refresh",
+                                                    "items": [
+                                                      {
+                                                        "title": "500 Premium Business Cards in New Design",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "100 Premium Letterheads",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "100 Premium Envelopes with Window",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "100 Premium Envelopes without Window",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "1000 Premium Flyers",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "New Corporate Design Proposal Folder",
+                                                        "subitems": []
+                                                      },
+                                                      {
+                                                        "title": "Company Stamp in New Design",
+                                                        "subitems": [
+                                                          "Digital Company Stamp",
+                                                          "Physical Premium Company Stamp"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Digital Templates",
+                                                        "subitems": [
+                                                          "Updated Office Templates",
+                                                          "New Email Signature",
+                                                          "Modernized Social Media Kit",
+                                                          "Digital Templates of All Print Materials"
+                                                        ]
+                                                      }
+                                                    ]
+                                                  },
+                                                  {
+                                                    "nr": "04",
+                                                    "title": "Digital Modernization",
+                                                    "items": [
+                                                      {
+                                                        "title": "Website Relaunch",
+                                                        "subitems": [
+                                                          "Website Audit & Analysis",
+                                                          "Modern Responsive Design",
+                                                          "Content Migration & Optimization",
+                                                          "New Product & Team Photos",
+                                                          "SEO Optimization"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Performance & Security",
+                                                        "subitems": [
+                                                          "Speed Optimization",
+                                                          "SSL Certificate Update"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "GDPR Complete Package",
+                                                        "subitems": [
+                                                          "Cookie Management",
+                                                          "Privacy Policy Update",
+                                                          "Legal Notice Update",
+                                                          "Security Audit",
+                                                          "Backup System"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Online Visibility",
+                                                        "subitems": [
+                                                          "Google Business Profile",
+                                                          "Business Directories",
+                                                          "Review Management (optional)",
+                                                          "Local SEO Optimization (optional)"
+                                                        ]
+                                                      },
+                                                      {
+                                                        "title": "Social Media Presence",
+                                                        "subitems": ["Instagram Business Account",
+                  "Facebook Business Page",
+                  "Classifieds Business Account"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "growth": {
+        "sections": [
+          {
+            "nr": "01",
+            "title": "Growth Analysis",
+            "items": [
+              {
+                "title": "Market Potential Analysis",
+                "subitems": []
+              },
+              {
+                "title": "Target Market Identification",
+                "subitems": []
+              },
+              {
+                "title": "Market Entry Barriers",
+                "subitems": []
+              },
+              {
+                "title": "Market Volume Calculation",
+                "subitems": []
+              },
+              {
+                "title": "Competition Analysis and Positioning",
+                "subitems": []
+              },
+              {
+                "title": "Competitive Advantages & USPs",
+                "subitems": []
+              },
+              {
+                "title": "Gap Analysis",
+                "subitems": []
+              },
+              {
+                "title": "Growth Strategy",
+                "subitems": [
+                  "Growth Lever Identification",
+                  "Scaling Model",
+                  "Expansion Strategy",
+                  "KPI Definition",
+                  "Milestone Planning"
+                ]
+              }
+            ]
+          },
+          {
+            "nr": "02",
+            "title": "Marketing Acceleration",
+            "items": [
+              {
+                "title": "Content Marketing Strategy",
+                "subitems": []
+              },
+              {
+                "title": "Social Media Marketing Plan",
+                "subitems": []
+              },
+              {
+                "title": "Email Marketing Setup",
+                "subitems": []
+              },
+              {
+                "title": "Lead Generation Optimization",
+                "subitems": []
+              },
+              {
+                "title": "Google Ads Campaigns",
+                "subitems": []
+              },
+              {
+                "title": "Social Media Advertising",
+                "subitems": []
+              },
+              {
+                "title": "Content Production",
+                "subitems": [
+                  "Content Calendar",
+                  "SEO-optimized Articles",
+                  "Social Media Content",
+                  "Email Templates",
+                  "Marketing Materials"
+                ]
+              }
+            ]
+          },
+          {
+            "nr": "03",
+            "title": "Sales Development",
+            "items": [
+              {
+                "title": "Sales Optimization",
+                "subitems": [
+                  "Sales Funnel Development",
+                  "Sales Process Setup",
+                  "Pitch Deck Professional",
+                  "Sales Presentations"
+                ]
+              },
+              {
+                "title": "Premium Proposal Templates",
+                "subitems": []
+              },
+              {
+                "title": "Sales Materials",
+                "subitems": [
+                  "Sales One-Pager",
+                  "Product Catalogs",
+                  "Case Studies",
+                  "Reference Marketing",
+                  "Testimonial Collection"
+                ]
+              },
+              {
+                "title": "Corporate Identity Expansion",
+                "subitems": [
+                  "Brand Guidelines 2.0",
+                  "Sub-brand Development",
+                  "Design System Extension"
+                ]
+              }
+            ]
+          },
+          {
+            "nr": "04",
+            "title": "Digital Scaling",
+            "items": [
+              {
+                "title": "Web Presence 2.0",
+                "subitems": [
+                  "Multi-location SEO",
+                  "Conversion Optimization",
+                  "A/B Testing Setup",
+                  "Landing Page System"
+                ]
+              },
+              {
+                "title": "Online Reputation",
+                "subitems": [
+                  "PR Strategy",
+                  "Press Release System",
+                  "Media Kit",
+                  "Award Planning",
+                  "Thought Leadership Setup"
+                ]
+              },
+              {
+                "title": "International & Multi-Language",
+                "subitems": [
+                  "Multilingual Website",
+                  "Multi-Language Content",
+                  "International Social Media",
+                  "Localized Marketing Materials",
+                  "International SEO"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
