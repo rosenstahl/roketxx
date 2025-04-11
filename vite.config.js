@@ -12,7 +12,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
+      includeAssets: ['favicon.ico', 'robots.txt'],
       manifest: {
         name: 'RoketX',
         short_name: 'RoketX',
@@ -22,21 +22,22 @@ export default defineConfig(({ mode }) => ({
         display: 'standalone',
         icons: [
           {
-            src: 'images/logos/pwa-64x64.png',     
+            src: '/favicon.ico',     
             sizes: '64x64',                        
-            type: 'image/png'                      
-          },
-          {
-            src: 'images/logos/pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png'
-          },
-          {
-            src: 'images/logos/pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png'
+            type: 'image/x-icon'                      
           }
         ]
+      },
+      // Deaktiviere die Verwendung eines externen Workboxes - wichtig!
+      injectRegister: false,
+      strategies: 'injectManifest',
+      // Workbox-Optionen setzen für korrekte MIME-Typen
+      workbox: {
+        // Deaktiviere den Service Worker ganz, falls er Probleme verursacht
+        skipWaiting: true,
+        clientsClaim: true,
+        cleanupOutdatedCaches: true,
+        sourcemap: false
       }
     })
   ],
