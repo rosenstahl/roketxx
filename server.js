@@ -76,8 +76,9 @@ app.use(express.static(path.join(__dirname, 'dist'), {
         res.set('Content-Type', 'text/css');
         break;
       case '.js':
-        res.set('Content-Type', 'application/javascript');
-        break;
+      case '.jsx':
+      res.set('Content-Type', 'application/javascript');
+      break;
       case '.json':
         res.set('Content-Type', 'application/json');
         break;
