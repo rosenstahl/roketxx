@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { fileURLToPath } from 'url'
 import path from 'path'
-// PWA-Plugin entfernt
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -10,7 +9,6 @@ const __dirname = path.dirname(__filename)
 export default defineConfig(({ mode }) => ({
   plugins: [
     react()
-    // PWA-Plugin entfernt, um MIME-Typ-Fehler zu vermeiden
   ],
   resolve: {
     alias: {
@@ -37,7 +35,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-    emptyOutDir: true,
+    emptyOutDir: true, // Wichtig: Leert das Ausgabeverzeichnis vor jedem Build
     sourcemap: mode === 'development',
     minify: 'terser',
     terserOptions: {
@@ -71,7 +69,6 @@ export default defineConfig(({ mode }) => ({
     cssCodeSplit: true,
     cssMinify: true,
   },
-  // Neue Test-Konfiguration
   test: {
     globals: true,
     environment: 'jsdom',
