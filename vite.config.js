@@ -2,44 +2,15 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { fileURLToPath } from 'url'
 import path from 'path'
-import { VitePWA } from 'vite-plugin-pwa'
+// PWA-Plugin entfernt
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 export default defineConfig(({ mode }) => ({
   plugins: [
-    react(),
-    VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: ['favicon.ico', 'robots.txt'],
-      manifest: {
-        name: 'RoketX',
-        short_name: 'RoketX',
-        description: 'Digital Marketing & Web Development',
-        theme_color: '#171614',
-        background_color: '#ffffff',
-        display: 'standalone',
-        icons: [
-          {
-            src: '/favicon.ico',     
-            sizes: '64x64',                        
-            type: 'image/x-icon'                      
-          }
-        ]
-      },
-      // Deaktiviere die Verwendung eines externen Workboxes - wichtig!
-      injectRegister: false,
-      strategies: 'injectManifest',
-      // Workbox-Optionen setzen für korrekte MIME-Typen
-      workbox: {
-        // Deaktiviere den Service Worker ganz, falls er Probleme verursacht
-        skipWaiting: true,
-        clientsClaim: true,
-        cleanupOutdatedCaches: true,
-        sourcemap: false
-      }
-    })
+    react()
+    // PWA-Plugin entfernt, um MIME-Typ-Fehler zu vermeiden
   ],
   resolve: {
     alias: {
