@@ -2,163 +2,165 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
+import http from 'http';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const app = express();
-const PORT = process.env.PORT || 3001;
-
-// Explizite MIME-Typen-Zuordnung für alle wichtigen Dateitypen
-const mimeTypes = {
-  '.html': 'text/html',
-  '.js': 'application/javascript', 
-  '.mjs': 'application/javascript',
-  '.cjs': 'application/javascript',
-  '.css': 'text/css',
-  '.json': 'application/json',
-  '.png': 'image/png',
-  '.jpg': 'image/jpeg',
-  '.jpeg': 'image/jpeg',
-  '.gif': 'image/gif',
-  '.svg': 'image/svg+xml',
-  '.ico': 'image/x-icon',
-  '.otf': 'font/otf',
-  '.ttf': 'font/ttf',
-  '.woff': 'font/woff',
-  '.woff2': 'font/woff2',
-  '.map': 'application/json',
-  '.txt': 'text/plain',
-  '.xml': 'application/xml'
-};
-
-// Logger für alle Anfragen
-app.use((req, res, next) => {
-  console.log(`📄 Anfrage: ${req.method} ${req.url}`);
-  next();
-});
-
-// Blockiere Service Worker-Dateien (falls vorhanden)
-app.use((req, res, next) => {
-  const blockedFiles = ['sw.js', 'workbox-', 'registerSW'];
-  if (blockedFiles.some(file => req.url.includes(file))) {
-    console.log(`⛔ Blockierte Service Worker-Anfrage: ${req.url}`);
-    return res.status(404).send('Not found');
-  }
-  next();
-});
-
-// Middleware für korrekte MIME-Typen basierend auf der URL-Anfrage
-app.use((req, res, next) => {
-  // Extrahiere die Dateiendung aus der URL
-  const urlExt = path.extname(req.url).toLowerCase();
+// BYPASS EXPRESS MIDDLEWARE COMPLETELY FOR JAVASCRIPT FILES
+// Dies ist der Schlüssel, da wir die Standard-Express-Middleware umgehen
+// und direkt HTTP-Headers setzen
+const server = http.createServer((req, res) => {
+  const url = req.url;
+  console.log(`📄 Anfrage: ${req.method} ${url}`);
   
-  if (urlExt && mimeTypes[urlExt]) {
-    // Setze MIME-Typ basierend auf URL-Endung
-    console.log(`🔄 Setze MIME-Typ für ${req.url}: ${mimeTypes[urlExt]}`);
-    res.set('Content-Type', mimeTypes[urlExt]);
+  // Extrahiere Dateityp
+  const ext = path.extname(url).toLowerCase();
+  
+  // Setze Hard-Coded MIME-Type für alle JavaScript-Dateien
+  if (ext === '.js') {
+    console.log(`🔧 JavaScript-Datei erkannt: ${url}`);
     
-    // Wichtig: Füge nosniff-Header hinzu, um MIME-Sniffing zu verhindern
-    res.set('X-Content-Type-Options', 'nosniff');
+    // Kritisch: Setze JavaScript-MIME-Typ direkt
+    res.setHeader('Content-Type', 'application/javascript');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    
+    // Versuche die Datei zu finden
+    const filePath = path.join(__dirname, 'dist', url);
+    
+    if (fs.existsSync(filePath)) {
+      // Lese und streame die Datei direkt, umgeht Express vollständig
+      const fileStream = fs.createReadStream(filePath);
+      fileStream.pipe(res);
+    } else {
+      // Fallback: Leite an Express weiter
+      app(req, res);
+    }
+  } 
+  // Setze Hard-Coded MIME-Type für JSON-Dateien
+  else if (ext === '.json') {
+    console.log(`🔧 JSON-Datei erkannt: ${url}`);
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    
+    const filePath = path.join(__dirname, 'dist', url);
+    
+    if (fs.existsSync(filePath)) {
+      const fileStream = fs.createReadStream(filePath);
+      fileStream.pipe(res);
+    } else {
+      app(req, res);
+    }
   }
-  
-  next();
+  // Alle anderen Dateitypen normal über Express verarbeiten
+  else {
+    app(req, res);
+  }
 });
 
-// Statische Dateien aus dem dist-Verzeichnis servieren
+// Standard Express App
+const app = express();
+
+// Express-Middleware
 app.use(express.static(path.join(__dirname, 'dist'), {
   setHeaders: (res, filePath) => {
     const ext = path.extname(filePath).toLowerCase();
     
-    // Setze für alle bekannten Dateitypen explizit den MIME-Typ
-    if (mimeTypes[ext]) {
-      console.log(`📦 Serviere ${path.basename(filePath)} als ${mimeTypes[ext]}`);
-      res.set('Content-Type', mimeTypes[ext]);
+    // Diese MIME-Typen werden mit niedrigerer Priorität gesetzt
+    // als die oben im HTTP-Server direkt gesetzten
+    switch(ext) {
+      case '.html':
+        res.set('Content-Type', 'text/html');
+        break;
+      case '.css':
+        res.set('Content-Type', 'text/css');
+        break;
+      case '.js':
+        res.set('Content-Type', 'application/javascript');
+        break;
+      case '.json':
+        res.set('Content-Type', 'application/json');
+        break;
+      case '.png':
+        res.set('Content-Type', 'image/png');
+        break;
+      case '.jpg':
+      case '.jpeg':
+        res.set('Content-Type', 'image/jpeg');
+        break;
+      case '.gif':
+        res.set('Content-Type', 'image/gif');
+        break;
+      case '.svg':
+        res.set('Content-Type', 'image/svg+xml');
+        break;
+      case '.ico':
+        res.set('Content-Type', 'image/x-icon');
+        break;
+      case '.otf':
+        res.set('Content-Type', 'font/otf');
+        break;
+      case '.ttf':
+        res.set('Content-Type', 'font/ttf');
+        break;
+      case '.woff':
+        res.set('Content-Type', 'font/woff');
+        break;
+      case '.woff2':
+        res.set('Content-Type', 'font/woff2');
+        break;
     }
     
-    // Cache-Header für statische Assets
-    if (ext !== '.html') {
-      res.set('Cache-Control', 'public, max-age=31536000');
-    }
-    
-    // Sicherheits-Header
+    // Zusätzliche Sicherheits-Header
     res.set('X-Content-Type-Options', 'nosniff');
   }
 }));
 
-// Express-statische Middleware für alle JS-Dateien mit explizitem MIME-Typ
-app.get('*.js', (req, res, next) => {
-  console.log(`🔄 JavaScript-Datei angefordert: ${req.url}`);
-  res.set('Content-Type', 'application/javascript');
-  res.set('X-Content-Type-Options', 'nosniff');
-  next();
-});
-
-// Express-statische Middleware für alle JSON-Dateien mit explizitem MIME-Typ
-app.get('*.json', (req, res, next) => {
-  console.log(`🔄 JSON-Datei angefordert: ${req.url}`);
-  res.set('Content-Type', 'application/json');
-  res.set('X-Content-Type-Options', 'nosniff');
-  next();
-});
-
-// SPA-Routing - alle anderen Anfragen zu index.html umleiten
+// Fallback für alle anderen Routen: SPA-Routing
 app.get('*', (req, res) => {
-  console.log(`🔀 SPA-Routing: ${req.url} -> index.html`);
-  res.set('Content-Type', 'text/html');
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
+// Port-Konfiguration
+const PORT = process.env.PORT || 3001;
+
 // Server starten
-app.listen(PORT, () => {
+server.listen(PORT, () => {
   console.log(`🚀 Server läuft auf Port ${PORT}`);
+  console.log(`📂 Serving files from: ${path.join(__dirname, 'dist')}`);
   
-  // Versuche dist-Verzeichnis zu analysieren
-  const distPath = path.join(__dirname, 'dist');
-  if (fs.existsSync(distPath)) {
-    console.log(`✅ dist-Verzeichnis gefunden`);
-    
-    // Prüfe ob index.html existiert
-    const indexPath = path.join(distPath, 'index.html');
-    if (fs.existsSync(indexPath)) {
-      console.log(`✅ index.html gefunden`);
-    } else {
-      console.log(`❌ index.html NICHT gefunden!`);
-    }
-    
-    // Zeige JS-Dateien im dist-Verzeichnis
-    const jsFiles = findAllFiles(distPath, '.js');
-    console.log(`🔍 Gefundene JS-Dateien (${jsFiles.length}):`);
-    jsFiles.slice(0, 5).forEach(file => {
-      console.log(`   - ${path.relative(distPath, file)}`);
+  // Diagnostische Ausgabe: Liste alle JS-Dateien im dist-Verzeichnis
+  try {
+    const jsFiles = findJsFiles(path.join(__dirname, 'dist'));
+    console.log(`📋 JavaScript-Dateien gefunden: ${jsFiles.length}`);
+    jsFiles.forEach(file => {
+      console.log(`   - ${path.relative(path.join(__dirname, 'dist'), file)}`);
     });
-    if (jsFiles.length > 5) {
-      console.log(`   ... und ${jsFiles.length - 5} weitere Dateien`);
-    }
-  } else {
-    console.log(`❌ dist-Verzeichnis NICHT gefunden!`);
+  } catch (err) {
+    console.error(`❌ Fehler beim Auflisten der JavaScript-Dateien: ${err.message}`);
   }
 });
 
-// Hilfsfunktion zum Finden aller Dateien mit einem bestimmten Dateityp
-function findAllFiles(dir, extension) {
+// Hilfsfunktion: Finde alle JavaScript-Dateien rekursiv
+function findJsFiles(dir) {
   let results = [];
-  const list = fs.readdirSync(dir);
-  
-  list.forEach(file => {
-    file = path.join(dir, file);
-    const stat = fs.statSync(file);
+  try {
+    const files = fs.readdirSync(dir);
     
-    if (stat && stat.isDirectory()) {
-      // Rekursiv durchsuchen
-      results = results.concat(findAllFiles(file, extension));
-    } else {
-      // Prüfen, ob die Datei die gesuchte Endung hat
-      if (file.endsWith(extension)) {
-        results.push(file);
+    for (const file of files) {
+      const filePath = path.join(dir, file);
+      const stat = fs.statSync(filePath);
+      
+      if (stat.isDirectory()) {
+        // Rekursiv durch Unterverzeichnisse gehen
+        results = results.concat(findJsFiles(filePath));
+      } else if (filePath.endsWith('.js')) {
+        results.push(filePath);
       }
     }
-  });
+  } catch (error) {
+    console.error(`❌ Fehler beim Durchsuchen von ${dir}: ${error.message}`);
+  }
   
   return results;
 }
