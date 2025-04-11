@@ -4,70 +4,19 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 import http from 'http';
 
+// Ermittlung der aktuellen Dateipfade
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-// BYPASS EXPRESS MIDDLEWARE COMPLETELY FOR JAVASCRIPT FILES
-// Dies ist der Schlüssel, da wir die Standard-Express-Middleware umgehen
-// und direkt HTTP-Headers setzen
-const server = http.createServer((req, res) => {
-  const url = req.url;
-  console.log(`📄 Anfrage: ${req.method} ${url}`);
-  
-  // Extrahiere Dateityp
-  const ext = path.extname(url).toLowerCase();
-  
-  // Setze Hard-Coded MIME-Type für alle JavaScript-Dateien
-  if (ext === '.js') {
-    console.log(`🔧 JavaScript-Datei erkannt: ${url}`);
-    
-    // Kritisch: Setze JavaScript-MIME-Typ direkt
-    res.setHeader('Content-Type', 'application/javascript');
-    res.setHeader('X-Content-Type-Options', 'nosniff');
-    
-    // Versuche die Datei zu finden
-    const filePath = path.join(__dirname, 'dist', url);
-    
-    if (fs.existsSync(filePath)) {
-      // Lese und streame die Datei direkt, umgeht Express vollständig
-      const fileStream = fs.createReadStream(filePath);
-      fileStream.pipe(res);
-    } else {
-      // Fallback: Leite an Express weiter
-      app(req, res);
-    }
-  } 
-  // Setze Hard-Coded MIME-Type für JSON-Dateien
-  else if (ext === '.json') {
-    console.log(`🔧 JSON-Datei erkannt: ${url}`);
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader('X-Content-Type-Options', 'nosniff');
-    
-    const filePath = path.join(__dirname, 'dist', url);
-    
-    if (fs.existsSync(filePath)) {
-      const fileStream = fs.createReadStream(filePath);
-      fileStream.pipe(res);
-    } else {
-      app(req, res);
-    }
-  }
-  // Alle anderen Dateitypen normal über Express verarbeiten
-  else {
-    app(req, res);
-  }
-});
 
 // Standard Express App
 const app = express();
 
-// Express-Middleware
+// Express-Static Middleware: Stellt Dateien aus dem dist-Verzeichnis bereit
 app.use(express.static(path.join(__dirname, 'dist'), {
   setHeaders: (res, filePath) => {
     const ext = path.extname(filePath).toLowerCase();
     
-    // Diese MIME-Typen werden mit niedrigerer Priorität gesetzt
-    // als die oben im HTTP-Server direkt gesetzten
+    // Setze den korrekten MIME-Typ für die jeweiligen Dateiendungen
     switch(ext) {
       case '.html':
         res.set('Content-Type', 'text/html');
@@ -77,8 +26,8 @@ app.use(express.static(path.join(__dirname, 'dist'), {
         break;
       case '.js':
       case '.jsx':
-      res.set('Content-Type', 'application/javascript');
-      break;
+        res.set('Content-Type', 'application/javascript');
+        break;
       case '.json':
         res.set('Content-Type', 'application/json');
         break;
@@ -110,27 +59,77 @@ app.use(express.static(path.join(__dirname, 'dist'), {
       case '.woff2':
         res.set('Content-Type', 'font/woff2');
         break;
+      // Ergänze hier weitere Dateitypen, falls erforderlich
     }
     
-    // Zusätzliche Sicherheits-Header
+    // Sicherheitsheader setzen
     res.set('X-Content-Type-Options', 'nosniff');
   }
 }));
 
-// Fallback für alle anderen Routen: SPA-Routing
+// Fallback für alle anderen Routen – Single Page Application Routing
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-// Port-Konfiguration
+// HTTP-Server, der bestimmte Dateianfragen direkt bedient, um die Express-Middleware zu umgehen
+const server = http.createServer((req, res) => {
+  const url = req.url;
+  console.log(`📄 Anfrage: ${req.method} ${url}`);
+  
+  // Dateiendung extrahieren
+  const ext = path.extname(url).toLowerCase();
+  
+  // Falls es sich um eine JavaScript-Datei handelt (.js oder .jsx)
+  if (ext === '.js' || ext === '.jsx') {
+    console.log(`🔧 JavaScript-Datei erkannt: ${url}`);
+    res.setHeader('Content-Type', 'application/javascript');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    
+    // Pfad zur Datei (im dist-Verzeichnis)
+    const filePath = path.join(__dirname, 'dist', url);
+    if (fs.existsSync(filePath)) {
+      const fileStream = fs.createReadStream(filePath);
+      fileStream.pipe(res);
+    } else {
+      // Falls die Datei nicht direkt gefunden wird, an Express weiterleiten
+      app(req, res);
+    }
+    return;
+  }
+  
+  // Bei JSON-Dateien explizit den JSON-MIME-Typ setzen
+  else if (ext === '.json') {
+    console.log(`🔧 JSON-Datei erkannt: ${url}`);
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    
+    const filePath = path.join(__dirname, 'dist', url);
+    if (fs.existsSync(filePath)) {
+      const fileStream = fs.createReadStream(filePath);
+      fileStream.pipe(res);
+    } else {
+      app(req, res);
+    }
+    return;
+  }
+  
+  // Alle anderen Anfragen über die Express-App abwickeln
+  else {
+    app(req, res);
+    return;
+  }
+});
+
+// Port-Konfiguration (Standard: 3001)
 const PORT = process.env.PORT || 3001;
 
-// Server starten
+// Server starten und diagnostische Ausgabe
 server.listen(PORT, () => {
   console.log(`🚀 Server läuft auf Port ${PORT}`);
   console.log(`📂 Serving files from: ${path.join(__dirname, 'dist')}`);
   
-  // Diagnostische Ausgabe: Liste alle JS-Dateien im dist-Verzeichnis
+  // Diagnose: Alle JavaScript-Dateien im dist-Verzeichnis auflisten
   try {
     const jsFiles = findJsFiles(path.join(__dirname, 'dist'));
     console.log(`📋 JavaScript-Dateien gefunden: ${jsFiles.length}`);
@@ -142,20 +141,18 @@ server.listen(PORT, () => {
   }
 });
 
-// Hilfsfunktion: Finde alle JavaScript-Dateien rekursiv
+// Hilfsfunktion: Rekursive Suche nach JavaScript-Dateien (.js oder .jsx)
 function findJsFiles(dir) {
   let results = [];
   try {
     const files = fs.readdirSync(dir);
-    
     for (const file of files) {
       const filePath = path.join(dir, file);
       const stat = fs.statSync(filePath);
       
       if (stat.isDirectory()) {
-        // Rekursiv durch Unterverzeichnisse gehen
         results = results.concat(findJsFiles(filePath));
-      } else if (filePath.endsWith('.js')) {
+      } else if (filePath.endsWith('.js') || filePath.endsWith('.jsx')) {
         results.push(filePath);
       }
     }
