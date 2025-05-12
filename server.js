@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'dist'), {
         break;
       case '.js':
       case '.jsx':  // Hier wird .jsx genauso behandelt wie .js
-        res.set('Content-Type', 'application/javascript');
+        res.set('Content-Type', 'application/javascript'); // Korrekter MIME-Typ für JavaScript
         break;
       case '.json':
         res.set('Content-Type', 'application/json');
@@ -59,7 +59,10 @@ app.use(express.static(path.join(__dirname, 'dist'), {
       case '.woff2':
         res.set('Content-Type', 'font/woff2');
         break;
-      // Hier können weitere Dateitypen ergänzt werden
+      default:
+        // Für alle anderen Dateitypen setzen wir keinen expliziten Content-Type
+        // Der Server sollte einen passenden Default-Typ wählen
+        break;
     }
     
     // Sicherheitsheader setzen
@@ -67,56 +70,26 @@ app.use(express.static(path.join(__dirname, 'dist'), {
   }
 }));
 
+// ALLE Anfragen für JavaScript-Dateien explizit behandeln
+app.get('*.js', (req, res, next) => {
+  res.set('Content-Type', 'application/javascript');
+  next();
+});
+
+// ALLE Anfragen für JSX-Dateien explizit behandeln
+app.get('*.jsx', (req, res, next) => {
+  res.set('Content-Type', 'application/javascript');
+  next();
+});
+
 // Fallback für alle anderen Routen: Single Page Application Routing
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-// HTTP-Server, der zuerst versucht, JavaScript/JSON-Dateien direkt auszuliefern
-const server = http.createServer((req, res) => {
-  const url = req.url;
-  console.log(`📄 Anfrage: ${req.method} ${url}`);
-
-  // Dateiendung extrahieren
-  const ext = path.extname(url).toLowerCase();
-
-  // Wenn es sich um eine JavaScript-Datei handelt (.js oder .jsx)
-  if (ext === '.js' || ext === '.jsx') {
-    console.log(`🔧 JavaScript-Datei erkannt: ${url}`);
-    res.setHeader('Content-Type', 'application/javascript');
-    res.setHeader('X-Content-Type-Options', 'nosniff');
-
-    // Pfad zur Datei im "dist"-Verzeichnis
-    const filePath = path.join(__dirname, 'dist', url);
-    if (fs.existsSync(filePath)) {
-      const fileStream = fs.createReadStream(filePath);
-      fileStream.pipe(res);
-      return;
-    } else {
-      // Falls Datei nicht gefunden wird – an Express weiterleiten
-      return app(req, res);
-    }
-  }
-  // Bei JSON-Dateien
-  else if (ext === '.json') {
-    console.log(`🔧 JSON-Datei erkannt: ${url}`);
-    res.setHeader('Content-Type', 'application/json');
-    res.setHeader('X-Content-Type-Options', 'nosniff');
-
-    const filePath = path.join(__dirname, 'dist', url);
-    if (fs.existsSync(filePath)) {
-      const fileStream = fs.createReadStream(filePath);
-      fileStream.pipe(res);
-      return;
-    } else {
-      return app(req, res);
-    }
-  }
-  // Alle anderen Anfragen über die Express-App abwickeln
-  else {
-    return app(req, res);
-  }
-});
+// Express-App direkt als HTTP-Server verwenden, statt einen separaten HTTP-Server zu erstellen
+// Dies verhindert Diskrepanzen bei der MIME-Typ-Behandlung
+const server = app;
 
 // Port-Konfiguration: Verwende den Port aus der Umgebung oder 3001 als Standard
 const PORT = process.env.PORT || 3001;
