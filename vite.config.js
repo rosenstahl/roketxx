@@ -29,7 +29,8 @@ export default defineConfig(({ mode }) => ({
     port: 3000,
     open: true,
     headers: {
-      'Access-Control-Allow-Origin': 'https://calendly.com'
+      'Access-Control-Allow-Origin': 'https://calendly.com',
+      'Content-Type': 'application/javascript; charset=utf-8'
     }
   },
   build: {
