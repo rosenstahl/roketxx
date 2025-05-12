@@ -2,13 +2,15 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { fileURLToPath } from 'url'
 import path from 'path'
+import mimeFix from './vite-plugin-mime-fix'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
 export default defineConfig(({ mode }) => ({
   plugins: [
-    react()
+    react(),
+    mimeFix() // Unser eigenes Plugin zur MIME-Typ-Korrektur
   ],
   resolve: {
     alias: {
@@ -30,7 +32,8 @@ export default defineConfig(({ mode }) => ({
     open: true,
     headers: {
       'Access-Control-Allow-Origin': 'https://calendly.com',
-      'Content-Type': 'application/javascript; charset=utf-8'
+      'Content-Type': 'application/javascript; charset=utf-8',
+      'X-Content-Type-Options': 'nosniff'
     }
   },
   build: {
@@ -50,6 +53,8 @@ export default defineConfig(({ mode }) => ({
         main: path.resolve(__dirname, 'index.html'),
       },
       output: {
+        // Explizite Content-Type-Einstellung für JavaScript-Dateien
+        intro: "/*! Content-Type: application/javascript; charset=utf-8 */",
         manualChunks: {
           vendor: ['react', 'react-dom', 'react-router-dom'],
           i18n: ['i18next', 'react-i18next'],
@@ -66,6 +71,7 @@ export default defineConfig(({ mode }) => ({
         entryFileNames: 'assets/js/[name]-[hash].js',
       },
     },
+    // MIME-Typ-Nachbearbeitung 
     reportCompressedSize: true,
     cssCodeSplit: true,
     cssMinify: true,
