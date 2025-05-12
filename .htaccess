@@ -1,0 +1,39 @@
+# Setzt den richtigen MIME-Typ für JavaScript-Dateien
+AddType application/javascript .js
+AddType application/javascript .jsx
+AddType application/javascript .mjs
+
+# Aktiviere CORS
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# Deaktiviere Caching für häufige Entwicklungsdateien
+<FilesMatch "\.(js|jsx|css|html|json)$">
+  FileETag None
+  <IfModule mod_headers.c>
+    Header unset ETag
+    Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
+  </IfModule>
+</FilesMatch>
+
+# Kompression aktivieren
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css application/javascript application/json
+</IfModule>
+
+# Node.js-Server über Proxy-Weiterleitung
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Wenn es sich um eine JavaScript-Datei handelt, setze explizit den MIME-Typ
+  RewriteRule \.js$ - [T=application/javascript]
+  RewriteRule \.jsx$ - [T=application/javascript]
+  
+  # Alle Anfragen an die Node.js-Anwendung weiterleiten
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ / [L,QSA]
+</IfModule>
