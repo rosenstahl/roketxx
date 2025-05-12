@@ -2,6 +2,7 @@ import express from 'express';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import fs from 'fs';
+import mime from 'mime-types'; // Dieser Import benötigt das Paket 'mime-types'
 
 // Ermitteln des aktuellen Dateipfads
 const __filename = fileURLToPath(import.meta.url);
@@ -10,106 +11,105 @@ const __dirname = path.dirname(__filename);
 // Erstelle eine Express-App
 const app = express();
 
+// MIME-Typen überschreiben - wichtig für Node.js-Hosting-Umgebungen
+// die möglicherweise standard MIME-Typen falsch interpretieren
+mime.define({
+  'application/javascript': ['js', 'jsx', 'mjs'],
+  'text/css': ['css'],
+  'text/html': ['html', 'htm'],
+  'application/json': ['json'],
+  'image/svg+xml': ['svg']
+});
+
 // Debug-Logging-Middleware
 app.use((req, res, next) => {
   console.log(`📄 Anfrage: ${req.method} ${req.url}`);
   next();
 });
 
-// WICHTIG: Diese Middleware muss VOR allen anderen Middlewares stehen
-// Explizite JavaScript MIME-Typ-Behandlung
+// WICHTIG: Diese explizite Middleware für JavaScript-Dateien VOR allen anderen Middlewares stellen
 app.get('*.js', (req, res, next) => {
   const filePath = path.join(__dirname, 'dist', req.url);
   console.log(`🔧 JavaScript-Datei angefordert: ${req.url}`);
   
   if (fs.existsSync(filePath)) {
-    res.set('Content-Type', 'application/javascript');
-    res.set('X-Content-Type-Options', 'nosniff');
-    fs.readFile(filePath, (err, data) => {
-      if (err) {
-        console.error(`❌ Fehler beim Lesen der JavaScript-Datei: ${err.message}`);
-        return next();
-      }
-      return res.send(data);
+    // Explizite und direkte Auslieferung von JavaScript-Dateien
+    res.removeHeader('Content-Type'); // Entferne vorhandene Content-Type-Header
+    res.set({
+      'Content-Type': 'application/javascript; charset=utf-8',
+      'X-Content-Type-Options': 'nosniff',
+      'Cache-Control': 'no-cache, no-store, must-revalidate'
     });
+    
+    // Datei synchron lesen und ausliefern, um sicherzustellen, dass dies vor anderen Middlewares passiert
+    try {
+      const content = fs.readFileSync(filePath);
+      return res.send(content);
+    } catch (err) {
+      console.error(`❌ Fehler beim Lesen der JavaScript-Datei: ${err.message}`);
+      return next();
+    }
   } else {
     console.log(`⚠️ JavaScript-Datei nicht gefunden: ${filePath}`);
     return next();
   }
 });
 
-// Auch für JSX-Dateien explizit behandeln
+// Ebenfalls für JSX-Dateien
 app.get('*.jsx', (req, res, next) => {
   const filePath = path.join(__dirname, 'dist', req.url);
   console.log(`🔧 JSX-Datei angefordert: ${req.url}`);
   
   if (fs.existsSync(filePath)) {
-    res.set('Content-Type', 'application/javascript');
-    res.set('X-Content-Type-Options', 'nosniff');
-    fs.readFile(filePath, (err, data) => {
-      if (err) {
-        console.error(`❌ Fehler beim Lesen der JSX-Datei: ${err.message}`);
-        return next();
-      }
-      return res.send(data);
+    res.removeHeader('Content-Type');
+    res.set({
+      'Content-Type': 'application/javascript; charset=utf-8',
+      'X-Content-Type-Options': 'nosniff',
+      'Cache-Control': 'no-cache, no-store, must-revalidate'
     });
+    
+    try {
+      const content = fs.readFileSync(filePath);
+      return res.send(content);
+    } catch (err) {
+      console.error(`❌ Fehler beim Lesen der JSX-Datei: ${err.message}`);
+      return next();
+    }
   } else {
     console.log(`⚠️ JSX-Datei nicht gefunden: ${filePath}`);
     return next();
   }
 });
 
-// Express-Static Middleware für alle anderen Dateien
+// Statischer File-Server mit angepassten MIME-Typen
 app.use(express.static(path.join(__dirname, 'dist'), {
   setHeaders: (res, filePath) => {
     const ext = path.extname(filePath).toLowerCase();
+    const contentType = mime.lookup(ext) || 'application/octet-stream';
     
-    // MIME-Typen für unterschiedliche Dateiendungen
-    switch(ext) {
-      case '.html':
-        res.set('Content-Type', 'text/html');
-        break;
-      case '.css':
-        res.set('Content-Type', 'text/css');
-        break;
-      case '.js':
-      case '.jsx':
-      case '.mjs':
-        res.set('Content-Type', 'application/javascript');
-        break;
-      case '.json':
-        res.set('Content-Type', 'application/json');
-        break;
-      case '.png':
-        res.set('Content-Type', 'image/png');
-        break;
-      case '.jpg':
-      case '.jpeg':
-        res.set('Content-Type', 'image/jpeg');
-        break;
-      case '.gif':
-        res.set('Content-Type', 'image/gif');
-        break;
-      case '.svg':
-        res.set('Content-Type', 'image/svg+xml');
-        break;
-      case '.ico':
-        res.set('Content-Type', 'image/x-icon');
-        break;
-    }
+    // Debug-Ausgabe für Content-Type
+    console.log(`📁 Auslieferung: ${filePath} mit Content-Type: ${contentType}`);
     
-    // Sicherheitsheader setzen
+    // Immer explizit den Content-Type setzen
+    res.removeHeader('Content-Type'); // Entferne potentiell vorhandene Header
+    res.set('Content-Type', contentType);
     res.set('X-Content-Type-Options', 'nosniff');
+    
+    // Für JavaScript besonders wichtig - nochmals prüfen
+    if (ext === '.js' || ext === '.jsx' || ext === '.mjs') {
+      res.set('Content-Type', 'application/javascript; charset=utf-8');
+      console.log(`🔧 JavaScript MIME-Typ gesetzt für: ${filePath}`);
+    }
   }
 }));
 
-// Fallback für alle anderen Routen: Single Page Application Routing
+// Fallback für SPA-Routing
 app.get('*', (req, res) => {
   console.log(`🌐 Fallback Route für: ${req.url}`);
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
-// Port-Konfiguration: Verwende den Port aus der Umgebung oder 3001 als Standard
+// Port-Konfiguration
 const PORT = process.env.PORT || 3001;
 
 // Starte den Server
@@ -117,7 +117,7 @@ app.listen(PORT, () => {
   console.log(`🚀 Server läuft auf Port ${PORT}`);
   console.log(`📂 Dateien werden aus: ${path.join(__dirname, 'dist')} serviert`);
 
-  // Diagnose: Verzeichnisstruktur anzeigen
+  // Diagnose
   try {
     console.log('📂 Verzeichnisstruktur:');
     const directories = [
@@ -134,18 +134,33 @@ app.listen(PORT, () => {
       }
     });
     
-    // JavaScript-Dateien auflisten
+    // JS-Dateien finden
     const jsFiles = findJsFiles(path.join(__dirname, 'dist'));
     console.log(`📋 Gefundene JavaScript-Dateien: ${jsFiles.length}`);
-    jsFiles.forEach(file => {
-      console.log(`   - ${path.relative(path.join(__dirname, 'dist'), file)}`);
-    });
+    
+    if (jsFiles.length === 0) {
+      console.error(`❌ KRITISCHES PROBLEM: Keine JavaScript-Dateien gefunden!`);
+      console.error(`   → Haben Sie 'npm run build' ausgeführt, bevor Sie den Server gestartet haben?`);
+    } else {
+      jsFiles.forEach(file => {
+        const relPath = path.relative(path.join(__dirname, 'dist'), file);
+        console.log(`   - ${relPath}`);
+        
+        // JS-Datei analysieren - Headers prüfen
+        try {
+          const stats = fs.statSync(file);
+          console.log(`     Größe: ${stats.size} Bytes, Zuletzt geändert: ${stats.mtime}`);
+        } catch (err) {
+          console.error(`     ❌ Fehler beim Analysieren: ${err.message}`);
+        }
+      });
+    }
   } catch (err) {
     console.error(`❌ Fehler bei der Diagnose: ${err.message}`);
   }
 });
 
-// Hilfsfunktion: Suche rekursiv nach .js und .jsx Dateien
+// Helper Funktion um JS-Dateien zu finden
 function findJsFiles(dir) {
   let results = [];
   try {
